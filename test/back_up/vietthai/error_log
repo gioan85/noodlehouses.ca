@@ -1,0 +1,8 @@
+[18-Aug-2014 17:55:24 UTC] PHP Notice:  Undefined index: full_name in /home/minhtri95/public_html/vietthai/send_mail.php on line 3
+[18-Aug-2014 17:55:24 UTC] PHP Notice:  Undefined index: phone_number in /home/minhtri95/public_html/vietthai/send_mail.php on line 4
+[18-Aug-2014 17:55:24 UTC] PHP Notice:  Undefined index: email_address in /home/minhtri95/public_html/vietthai/send_mail.php on line 5
+[18-Aug-2014 17:55:24 UTC] PHP Notice:  Undefined index: message in /home/minhtri95/public_html/vietthai/send_mail.php on line 6
+[10-Sep-2014 16:21:37 UTC] PHP Warning:  mysqli_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/minhtri95/public_html/vietthai/includes/functions/database.php on line 8
+[10-Sep-2014 16:22:16 UTC] PHP Warning:  mysqli_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/minhtri95/public_html/vietthai/includes/functions/database.php on line 8
+[10-Sep-2014 17:30:01 UTC] PHP Warning:  mysqli_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/minhtri95/public_html/vietthai/includes/functions/database.php on line 8
+[10-Sep-2014 17:30:07 UTC] PHP Warning:  mysqli_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/minhtri95/public_html/vietthai/includes/functions/database.php on line 8

@@ -1,0 +1,92 @@
+body, html{ font-family:Tahoma, Geneva, sans-serif; font-size:14px; line-height:18px; color:#757575; background:#fff; margin:0; padding:0;}
+.Hel_Thin{font-family: 'Helvetica_Thin';}
+.Hel_Regular{font-family: 'Helvetica_Regular';}
+.Hel_Light{font-family: 'Helvetica_Light';}
+.Hel_Bold{font-family: 'Helvetica_Bold';}
+.Hel_Heavy{font-family: 'Helvetica_Heavy';}
+
+b{font-family: 'Helvetica_Bold'; font-weight:normal;}
+.green{ color:#2a5e0b;}
+h1{font-family: 'Helvetica_Thin'; font-size:36px; border-bottom:1px dashed #2a5e0b; color:#2a5e0b; padding-bottom:15px; margin-bottom:10px; clear:both; width:100%;}
+
+.loading_page{ width:100%; height:1024px; background:rgba(255,255,255,0.8); position:absolute; left:0px; top:0px; z-index:1000; text-align:center;}
+.loading_page .icon_loading{ background:url(../images/loading.gif) no-repeat; margin:334px auto; width:100px; height:100px;}
+
+.main_cover{ background:url(../images/main_bg.jpg) repeat; width:100%; height:768px; overflow:hidden; position:relative;}
+.top_bar{ width:100%; position:relative;}
+.top_bar_line{ background:url(../images/top_bg_line.png) repeat-x; height:22px; width:100%; position:absolute; bottom:-12px;}
+.top_menu{ width:100%; height:388px; background:#7eac00; overflow:hidden;}
+.top_menu.ani{ height:77px;}
+.content_cover{ width:1024px; margin:0 auto; overflow:hidden; position:relative;}
+.top_menu .content_cover{ height:77px;}
+.top_logo{ background:url(../images/top_logo.jpg) no-repeat; width:429px; height:77px; display:none; float:left;}
+.top_nav{ border-top:4px; height:73px; float:right; width:125px; text-align:center; font-size:20px; color:#fff; line-height:72px; text-shadow:0px 0px 5px #fff; position:absolute; top:-77px;}
+.top_nav span{ display:inline-block; position:absolute; width:100%; text-align:center; left:0px; top:0px;}
+.top_nav_bg{ width:100%; height:73px; position:absolute; top:-73px; left:0px; opacity:0.2;}
+.top_nav_bg.show{ top:0px;}
+
+.top_nav.contact{ border-top:4px solid #cb4565; left:899px;}
+.top_nav.contact .top_nav_bg{ background:#cb4565;}
+.top_nav.menu{ border-top:4px solid #894599; left:774px;}
+.top_nav.menu .top_nav_bg{ background:#894599;}
+.top_nav.about{ border-top:4px solid #32d599; left:649px;}
+.top_nav.about .top_nav_bg{ background:#32d599;}
+.top_nav.home{ border-top:4px solid #d6c701; left:524px;}
+.top_nav.home .top_nav_bg{ background:#d6c701;}
+.top_nav.home.ani{ top:0px; -webkit-transition:0.2s ease all 0.2s; -moz-transition:0.2s ease all 0.2s; transition:0.2s ease all 0.2s;}
+.top_nav.about.ani{ top:0px; -webkit-transition:0.2s ease all 0.3s; -moz-transition:0.2s ease all 0.3s; transition:0.2s ease all 0.3s;}
+.top_nav.menu.ani{ top:0px; -webkit-transition:0.2s ease all 0.4s; -moz-transition:0.2s ease all 0.4s; transition:0.2s ease all 0.4s;}
+.top_nav.contact.ani{ top:0px; -webkit-transition:0.2s ease all 0.5s; -moz-transition:0.2s ease all 0.5s; transition:0.2s ease all 0.5s;}
+
+.top_nav.home .top_nav_bg.ani{ top:73px; -webkit-transition:0.2s ease all 0.6s; -moz-transition:0.2s ease all 0.6s; transition:0.2s ease all 0.6s;}
+.top_nav.about .top_nav_bg.ani{ top:73px; -webkit-transition:0.2s ease all 0.7s; -moz-transition:0.2s ease all 0.7s; transition:0.2s ease all 0.7s;}
+.top_nav.menu .top_nav_bg.ani{ top:73px; -webkit-transition:0.2s ease all 0.8s; -moz-transition:0.2s ease all 0.8s; transition:0.2s ease all 0.8s;}
+.top_nav.contact .top_nav_bg.ani{ top:73px; -webkit-transition:0.2s ease all 0.9s; -moz-transition:0.2s ease all 0.9s; transition:0.2s ease all 0.9s;}
+
+.speed_1{ 
+	-webkit-transition:0.5s ease all;
+	-moz-transition:0.5s ease all;
+	transition:0.5s ease all;
+}
+
+.top_nav_bg.speed{ 
+	-webkit-transition:0.1s ease all;
+	-moz-transition:0.1s ease all;
+	transition:0.1s ease all;
+}
+
+
+.bot_bar{ width:100%; position:absolute; bottom:0px; left:0px;}
+.bot_bar_line{ background:url(../images/bot_bg_line.png) repeat-x; height:22px; width:100%; position:absolute; left:0px; top:-12px;}
+.bot_content{ width:100%; background:#fff;}
+.bot_content .content_cover{ margin-top:10px; height:370px;}
+.bot_content .content_cover.ani{ height:197px;}
+.bot_copyright{ background:url(../images/bottom_bar.jpg) no-repeat; width:1024px; height:69px; display:none;}
+.bot_copyright .phone_num{ font-size:16px; line-height:20px; float:left; margin:20px 0px 0px 50px;}
+.bot_copyright .phone_num b{ font-family:'Helvetica_Heavy'; font-size:24px;}
+.bot_copyright .copyright{ float:right; font-size:14px; line-height:18px; margin:20px 0px 0px 0px; text-align:right;}
+
+/*--------------home--------------*/
+.home_second_content{ clear:both; width:100%; overflow:hidden; display:none;}
+.home_second_content .left_block{ width:640px; float:left; margin:0px 0px 15px 15px;}
+.home_second_content .special_discount{ background:url(../images/special_discount.png) no-repeat; width:306px; height:63px; float:left; font-size:26px; color:#fff; padding:51px 0px 0px 31px; margin:10px 0px 0px 30px;}
+
+.mid_content { display:none;}
+.home_slider{ height:483px;}
+.home_slider .btn_pre{ background:url(../images/btn_pre.png) no-repeat 0px -51px; width:53px; height:51px; position:absolute; left:13px; top:219px; opacity:0.8;}
+.home_slider .btn_next{ background:url(../images/btn_next.png) no-repeat 0px -51px; width:53px; height:51px; position:absolute; left:563px; top:219px; opacity:0.8;}
+.home_slider .btn_pre:hover, .home_slider .btn_next:hover{ opacity:1;}
+.slider{ position:relative;}
+.slider .item_text{ font-size:72px; color:#fff; text-shadow:0px 0px 10px #fff; position:absolute; left:110px; top:30px; opacity:0;}
+.slider .item_text span{ color:#5c7e00;}
+.slider .item_text.ani{ opacity:1; left:60px;}
+.slider .item_text.ani_2{ opacity:0; left:10px;}
+.slider .item_img{ position:absolute; left:334px; top:0px; width:586px; height:483px; opacity:0;}
+.slider .item_img_1{ background:url(../images/food_1.png) no-repeat;}
+.slider .item_img_2{ background:url(../images/food_2.png) no-repeat;}
+.slider .item_img_3{ background:url(../images/food_3.png) no-repeat;}
+.slider .item_img_4{ background:url(../images/food_4.png) no-repeat;}
+.slider .item_img_5{ background:url(../images/food_5.png) no-repeat;}
+.slider .item_img_6{ background:url(../images/food_6.png) no-repeat;}
+.slider .item_img.ani{ opacity:1; left:234px;}
+.slider .item_img.ani_2{ opacity:0; left:134px;}

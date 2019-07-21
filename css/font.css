@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Hel_87';
+	src: url('../fonts/87_Heavy.otf'),
+		 url('../fonts/87_Heavy.eot');
+}
+@font-face {
+	font-family: 'Hel_bold';
+	src: url('../fonts/HelveticaLTStd-Bold.otf'),
+		 url('../fonts/HelveticaLTStd-Bold.eot');
+}
+@font-face {
+	font-family: 'Hel_bold_Con';
+	src: url('../fonts/HelveticaLTStd-BoldCond.otf'),
+		 url('../fonts/HelveticaLTStd-BoldCond.eot');
+}
+@font-face {
+	font-family: 'Hel_Con';
+	src: url('../fonts/HelveticaLTStd-Cond.otf'),
+		 url('../fonts/HelveticaLTStd-Cond.eot');
+}
+@font-face {
+	font-family: 'Hel_Light';
+	src: url('../fonts/HelveticaLTStd-Light.otf'),
+		 url('../fonts/HelveticaLTStd-Light.eot');
+}
+@font-face {
+	font-family: 'Hel_Thin';
+	src: url('../fonts/HelveticaNeueLTStd.otf'),
+		 url('../fonts/HelveticaNeueLTStd.eot');
+}
+@font-face {
+	font-family: 'PALSCRI';
+	src: url('../fonts/PALSCRI.TTF'),
+		 url('../fonts/PALSCRI.eot');
+}
+@font-face {
+	font-family: 'Perpetua';
+	src: url('../fonts/Perpetua.TTF'),
+		 url('../fonts/Perpetua.eot');
+}
+@font-face {
+	font-family: 'Palace_Script_MT';
+	src: url('../fonts/Palace_Script_MT.ttf'),
+		 url('../fonts/Palace_Script_MT.eot');
+}

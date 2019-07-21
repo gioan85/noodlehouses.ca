@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<foods>
+	<food id="1">
+		<type>title</type>
+		<name>VERMICELLI</name>
+		<value></value>
+	</food>
+	<food id="2">
+		<type>food</type>
+		<name>food 1</name>
+		<value>10.00</value>
+	</food>
+	<food id="3">
+		<type>food</type>
+		<name>food 2</name>
+		<value>10.00</value>
+	</food>
+	<food id="4">
+		<type>food</type>
+		<name>food 3</name>
+		<value>10.00</value>
+	</food>
+</foods>
+
+

@@ -1,0 +1,59 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Mississauga",
+               "short_name" : "Mississauga",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Peel Regional Municipality",
+               "short_name" : "Peel Regional Municipality",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Ontario",
+               "short_name" : "ON",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Canada",
+               "short_name" : "CA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Mississauga, ON, Canada",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.737351,
+                  "lng" : -79.5426461
+               },
+               "southwest" : {
+                  "lat" : 43.480958,
+                  "lng" : -79.8101295
+               }
+            },
+            "location" : {
+               "lat" : 43.5890452,
+               "lng" : -79.6441198
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.737351,
+                  "lng" : -79.5426461
+               },
+               "southwest" : {
+                  "lat" : 43.480958,
+                  "lng" : -79.8101295
+               }
+            }
+         },
+         "place_id" : "ChIJtwVr559GK4gR22ZZ175sFAM",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

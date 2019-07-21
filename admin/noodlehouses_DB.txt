@@ -1,0 +1,108 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Sep 05, 2014 at 07:19 PM
+-- Server version: 5.1.30
+-- PHP Version: 5.2.8
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `noodlehouses`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `account`
+--
+
+CREATE TABLE IF NOT EXISTS `account` (
+  `ID` int(1) NOT NULL AUTO_INCREMENT,
+  `USER` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `PASSWORD` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `account`
+--
+
+INSERT INTO `account` (`ID`, `USER`, `PASSWORD`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bill`
+--
+
+CREATE TABLE IF NOT EXISTS `bill` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CUSTOMER` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `PHONE` text COLLATE utf8_bin NOT NULL,
+  `ADDRESS` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `FOODS` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `DESCRIPTION` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `PRICE` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `bill`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `foods`
+--
+
+CREATE TABLE IF NOT EXISTS `foods` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `MENU` int(11) NOT NULL,
+  `TYPE` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `NAME` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `DESCRIPTION` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `VALUE` int(11) NOT NULL,
+  PRIMARY KEY (`ID`,`MENU`),
+  UNIQUE KEY `VALUE` (`VALUE`),
+  UNIQUE KEY `VALUE_2` (`VALUE`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `foods`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `menu`
+--
+
+CREATE TABLE IF NOT EXISTS `menu` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `NAME` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `DESCRIPTION` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `menu`
+--
+
+INSERT INTO `menu` (`ID`, `NAME`, `DESCRIPTION`) VALUES
+(1, 'APPETIZERS', 'null'),
+(2, 'SALADS', 'null'),
+(3, 'SOUPS', ''),
+(4, 'VERMICELLI', ''),
+(5, 'FROM THE GRILL', ''),
+(6, 'PHO', ''),
+(7, 'SIZZLING PLATES', ''),
+(8, 'THAI DISHES', ''),
+(9, 'DESSERTS', ''),
+(10, 'BEVERAGES', '');

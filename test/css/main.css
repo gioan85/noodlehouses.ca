@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-size:14px; line-height:18px;}
+
+.cover{ width:950px;}
+
+.top_bar{ height:180px;}
+
+.top_bar.ani{
+	height:80px;
+}
+
+.top_bar.ani ul{ 
+	bottom: auto;
+    height: 40%;
+    top: 30%; left:0px;
+    background: none;
+    width: auto;
+}
+
+.top_logo.ani{
+    height: 200%;
+    -webkit-transform: translate3d(0px,-44px,0px) scale(0.5);
+}
+.top_bar ul li a{
+	padding:10px;	
+}
+
+.social_icon{
+	width:43px; height:43px; top:20px; right:20px;
+}
+.social_icon.facebook{ right:83px;}
+
+.top_bar.ani .social_icon{
+	top:17px;
+}
+
+.home_screen{
+	height:1132px;
+}
+
+.home_screen .address_bar .phone_numb .OR{
+	width:35px; height:35px;
+	right:-18px;
+	top:60px;
+	z-index: 10;
+}
+
+
+
+/*-----------------menu screen-----------------*/
+
+.menu_screen{
+	height: 1008px; 
+}
+
+.menu_screen .top_title,
+#menu_item_list .navi{
+	margin: 0px 0px 50px 0px;
+}
+
+.menu_screen .menu_list .menu_item{
+	width:170px; height:170px;
+	border:8px solid #fff;
+	box-shadow:-5px 0px 10px 2px rgba(0,0,0,0.5);
+	margin:30px -50px 50px 0px;
+}
+
+.menu_screen .menu_list .menu_item:nth-child(1){ margin-left:-50px;}
+
+#menu_item_list .navi ul{
+	height: 56px;
+}
+
+#menu_item_list .navi li a{
+	padding: 0px 6px;	
+}
+
+#address_bar,
+#Del_Pick_bar{
+	height: 150px; bottom:-75px;
+}
+#Del_Pick_bar{ height:150px; bottom:-75px;}
+
+.menu_screen .cover{ 
+	padding-top:150px;
+	height:859px;
+}
+
+
+#menu_item_list .left_block .menu_img{
+	 min-height: 264px;
+}
+
+#menu_item_list .left_block .menu_img::after{
+	height: 24px;
+}
+
+#menu_item_list .left_block .menu_img .menu_list_icon{
+	margin-top:16px;
+}
+
+#menu_item_list .left_block .menu_img .menu_list_icon .icon_{
+	width:12px; height:12px; margin-left:6px;
+}
+
+#menu_item_list .shopping_cart{
+	width:272px; height:85px;
+	top:480px;
+}
+
+#menu_item_list .shopping_cart a.checkout{ margin-right:10px; }
+
+#menu_item_list .right_block{
+	height:641px;
+}
+
+/*-------------------------------------order screen----------------------------*/
+
+.order_screen{
+	height: 1004px; 
+}
+
+.order_screen .order_content{
+	height:830px;
+	margin:0px 0px 20px 0px;
+	position: relative;
+	top:120px; overflow: visible;
+}
+
+.order_screen .order_content .left_content .title_bar{
+	min-height:56px;
+}
+
+.order_screen .order_content .left_content .title_bar::before{
+	left:-8px; height:55px;
+}
+
+.order_screen .order_content .left_content .title_bar .pick_info .radio_button{
+	padding:0px 0px 0px 30px;
+	margin:0px;
+}
+
+.order_screen .order_content .left_content .title_bar .pick_info .radio_button span{
+	top:12px;
+	width:16px; height:16px; border-radius: 20px;
+	border: 2px solid #959595;
+}
+
+.order_screen .order_content .left_content .title_bar .pick_info .radio_button span::before{
+	width:12px; height: 12px; border-radius:12px;
+	left:2px; top:2px;
+}
+
+.order_screen .order_content .left_content .title_bar .pick_info .pick_time{
+	padding:5px 0px 5px 30px;
+}
+
+.order_screen .order_content .left_content .title_bar .pick_info .pick_time span{
+	padding:0px 10px 0px 10px;
+}
+.order_screen .order_content .right_content .receipt_content .receipt_scroller{
+	height:400px;
+}
+
+@media only screen 
+and (max-device-width: 767px) { 
+	body { font-size:18px; line-height:22px;}
+	.top_bar ul li{ font-size:1.2em;}
+	.top_bar.ani ul.active{ overflow:visible;}
+	.top_bar.ani ul{
+		width: 13%; height: 50%;
+		overflow: hidden; left:10%;
+	}
+	.top_bar.ani ul span{
+		display: inline-block;
+		width: 50%; height: 20%;
+		background: #666;
+		margin-bottom: 5%;
+		position: relative; left:25%;
+	}
+	
+	.top_bar.ani ul li{ 
+		font-size: 1.2em; line-height: 1em;
+		margin: 0;
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		height: auto;
+		padding: 0.2em 0;
+		background: #fff;
+		margin-bottom:1px;
+	}
+	.top_bar.ani ul li.active{
+		border:1px solid #db4f44;
+	}
+	.top_bar.ani ul li a{ padding: 0.2em 0;}
+	.top_bar.ani ul li a.active{ color:#567500; }
+	.top_bar.ani ul li a.active div{ display:none;}
+	
+	.home_screen #address_bar .address_bar .left_text{ font-size:1.2em;}
+	.home_screen #address_bar .address_bar .phone_numb{ 
+		font-size:2em;
+		width:45%;
+	}
+	.home_screen #address_bar .address_bar .Order{ width:50%;}
+	.home_screen #address_bar .address_bar .left_text{ display:none;}
+	
+	
+	#menu_item_list .shopping_cart a.checkout{ font-size:0.7em;}
+	
+	.order_screen .order_content .left_content .title_bar a{ line-height:1.6em;}
+	.Del_Pick_block{ font-size:2.0em;}
+	.order_screen .order_content .right_content .receipt_content::before{bottom:86.5%;}
+	.order_screen .order_content .right_content .receipt_content{ width:83.6%;}
+	.order_screen .order_content .right_content .receipt_content .receipt_scroller{
+	height:350px;
+}
+	
+	#menu_item_list .navi{
+		width:100%; height: 56px; z-index: 10;
+	}
+	#menu_item_list .navi ul{ position: absolute; overflow: hidden; }
+	#menu_item_list .navi ul::before{
+		content: 'Menu';
+    	display: inline-block;
+    	position: absolute; left: 0px; top: 0px;
+    	width: 100%; height: 100%;
+    	text-align: center; font-size: 2em; color: #fff; line-height: 1.4em;
+	}
+	#menu_item_list .navi li{ 
+		width:100%; background:#fff; border-bottom: 1px solid #b23127;
+		display: none; left:100%;
+	}
+	.menu_screen .menu_list.mobile{
+		position: relative;
+	}
+	.menu_screen .menu_list.mobile .menu_item{
+		margin:30px 10px 0px 10px;
+	}
+	.menu_screen .menu_list .menu_item.hide{
+		display:none;
+	}
+	.menu_screen .menu_list .menu_item.show{
+		display:block;
+	}
+
+	.menu_screen .menu_list.mobile .control_btn{
+		background:url(../images/menu_next_back.png) no-repeat;
+		width:36px; height: 32px;
+		position: absolute;
+		top:-webkit-calc((100% - 36px) / 2);
+		top:calc((100% - 36px) / 2);
+	}
+	.menu_screen .menu_list.mobile .control_btn.next{
+		-webkit-transform:rotate(90deg);
+		-ms-transform:rotate(90deg);
+		-o-transform:rotate(90deg);
+		transform: rotate(90deg);
+		right:0px;
+	}
+	.menu_screen .menu_list.mobile .control_btn.back{
+		-webkit-transform:rotate(-90deg);
+		-ms-transform:rotate(-90deg);
+		-o-transform:rotate(-90deg);
+		transform: rotate(-90deg);
+		left:0px;
+	}
+	.menu_screen .menu_list.mobile .menu_list_icon_bar{
+		width:100%;
+		position: absolute; left:0px; top:110%;
+	}
+	.menu_screen .menu_list.mobile .menu_list_icon_bar .menu_list_icon_{
+		height: 15px; width:15px;
+		background:#7eac00; border-radius: 15px;
+		margin-left: 10px;
+	}
+	.menu_screen .menu_list.mobile .menu_list_icon_bar .menu_list_icon_.active{
+		background:#e7685e;
+	}
+}
+
+
+/*@media only screen 
+and (max-device-width: 479px) { 
+	body { font-size:20px; line-height:22px;}
+	.top_bar ul{ width:70%; left:15%;}
+	.top_bar ul li{ font-size:1.6em;}
+	.top_bar.ani ul li{ font-size:1.6em; line-height:1em; margin:0px 0.1em}
+	.top_logo.ani{
+		height: 200%;
+	    -webkit-transform: translate3d(160px,-30px,0px) scale(0.5);
+	    width: 15%;
+	    background-position: -230px 0px;
+	    height: 172%;
+	}
+	#menu_item_list .navi{
+		width:30%; height: 56px; z-index: 10;
+	}
+	#menu_item_list .navi ul{ position: absolute; overflow: visible; }
+	#menu_item_list .navi ul::before{
+		content: 'Menu';
+    	display: inline-block;
+    	position: absolute; left: 0px; top: 0px;
+    	width: 100%; height: 100%;
+    	text-align: center; font-size: 2em; color: #fff; line-height: 1.4em;
+	}
+	#menu_item_list .navi li{ 
+		width:100%; background:#fff; border-bottom: 1px solid #b23127;
+		display: none; left:100%;
+	}
+	#menu_item_list .navi li::before,
+	#menu_item_list .navi li::after{ display: none; }
+	#menu_item_list .navi li a{
+		font-size:1.2em; text-shadow: none; color:#b23127;
+	}
+	#menu_item_list .navi li.active a{ color:#fff; }
+	#menu_item_list .left_block .menu_name{ font-size:2em; }
+
+	.menu_screen .menu_list .menu_item .menu_name{ line-height: 1em; }
+	.home_screen #address_bar .address_bar .left_text{ font-size:1.2em;}
+	.home_screen #address_bar .address_bar .phone_numb{ font-size:2em;}
+	#menu_item_list .shopping_cart a.checkout{ font-size:0.7em;}
+	.order_screen .order_content .left_content .title_bar a{ line-height:1.6em;}
+	.Del_Pick_block{ font-size:2.0em !important;}
+	.order_screen .order_content .right_content .receipt_content::before{bottom:86.5%;}
+	.order_screen .order_content .right_content .receipt_content{ width:83.6%;}
+	.order_screen .order_content .right_content .receipt_content .receipt_scroller{	height:350px;}
+	.order_screen .order_content .right_content .receipt_content .title{ font-size:1em; }
+}*/

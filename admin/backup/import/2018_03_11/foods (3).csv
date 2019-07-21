@@ -1,0 +1,233 @@
+ID,MENU,PRICE,NAME,DESCRIPTION,KEY
+34,34,3,3,7.00,7.00,"SO1. *WONTON SOUP","SO1. *WONTON SOUP","-Chicken and shrimp wontons in chicken broth","-Chicken and shrimp wontons in chicken broth",SO1,SO1
+35,35,3,3,0.00,0.00,"SO2. TOM YUM SOUP","SO2. TOM YUM SOUP",,,SO2,SO2
+36,36,3,3,7.50,7.50,"A) Tofu Vegetable","A) Tofu Vegetable",,,SO1A,SO1A
+37,37,3,3,7.50,7.50,"B) Chicken","B) Chicken",,,SO1B,SO1B
+38,38,3,3,8.50,8.50,"C) Shrimp","C) Shrimp",,,SO1C,SO1C
+41,41,3,3,8.50,8.50,"D) Shrimp and Chicken","D) Shrimp and Chicken",,,SO1D,SO1D
+42,42,3,3,0.00,0.00,"SO3. COCONUT TOM YUM SOUP","SO3. COCONUT TOM YUM SOUP",,,SO3,SO3
+43,43,3,3,7.50,7.50,"A) Tofu Vegetable","A) Tofu Vegetable",,,SO3A,SO3A
+44,44,3,3,7.50,7.50,"B) Chicken","B) Chicken",,,SO3B,SO3B
+45,45,3,3,8.50,8.50,"C) Shrimp","C) Shrimp",,,SO3C,SO3C
+46,46,3,3,8.50,8.50,"D) Shrimp and Chicken","D) Shrimp and Chicken",,,SO3D,SO3D
+48,48,3,3,10.00,10.00,"SO4. SEAFOOD EGG NOODLE SOUP (Mi hai san)","SO4. SEAFOOD EGG NOODLE SOUP (Mi hai san)","-Mixed seafood, egg noodle in chicken broth","-Mixed seafood, egg noodle in chicken broth",SO4,SO4
+49,49,3,3,9.00,9.00,"SO5. WONTON EGG NOODLE SOUP (Wonton Mi)	","SO5. WONTON EGG NOODLE SOUP (Wonton Mi)	","-Egg noodle, chicken and shrimp wontons in chicken broth","-Egg noodle, chicken and shrimp wontons in chicken broth",SO5,SO5
+50,50,3,3,10.00,10.00,"SO6. *THAI STYLE SEAFOOD RICE NOODLE SOUP (Pho Thai)","SO6. *THAI STYLE SEAFOOD RICE NOODLE SOUP (Pho Thai)","-Rice noodle w/ shrimp, calamari, mussels, crab and fish ball","-Rice noodle w/ shrimp, calamari, mussels, crab and fish ball",SO6,SO6
+53,53,1,1,12.00,12.00,"A1.  *SIGNATURE  PLATTER","A1.  *SIGNATURE  PLATTER","- Crispy shrimp spring roll (1),<br>- Crispy chicken spring roll (1),<br>- Crispy Calamari (4),<br>- Crispy wonton (4), Fresh rolls (2)","- Crispy shrimp spring roll (1),<br>- Crispy chicken spring roll (1),<br>- Crispy Calamari (4),<br>- Crispy wonton (4), Fresh rolls (2)",A1,A1
+54,54,1,1,6.00,6.00,"A2. *CRISPY SHRIMP SPRING ROLLS (2)","A2. *CRISPY SHRIMP SPRING ROLLS (2)","-Marinated tiger shrimp and mixed vegetables","-Marinated tiger shrimp and mixed vegetables",A2,A2
+55,55,1,1,5.00,5.00,"A3. *CRISPY CHICKEN SPRING ROLLS (2)","A3. *CRISPY CHICKEN SPRING ROLLS (2)","-Ground chicken and mixed vegetables","-Ground chicken and mixed vegetables",A3,A3
+56,56,1,1,5.00,5.00,"A4. CRISPY VEGETABLE SPRING ROLLS (2)","A4. CRISPY VEGETABLE SPRING ROLLS (2)","- Mixed vegetables","- Mixed vegetables",A4,A4
+57,57,1,1,5.00,5.00,"A5. *FRESH ROLLS (2)","A5. *FRESH ROLLS (2)","-Rice paper with BBQ grilled pork sausage and vermicelli","-Rice paper with BBQ grilled pork sausage and vermicelli",A5,A5
+58,58,1,1,5.00,5.00,"A6. *SHRIMP ","A6. *SHRIMP ","-Rice paper with shrimp, pork, vegetables and vermicelli","-Rice paper with shrimp, pork, vegetables and vermicelli",A6,A6
+68,68,4,4,10.00,10.00,"V1. Grilled Beef and Spring Roll<br>Bun Bo va cha gio","V1. Grilled Beef and Spring Roll<br>Bun Bo va cha gio",,,V1,V1
+69,69,8,8,0.00,0.00,"T1. *PAD THAI","T1. *PAD THAI","Thai rice noodles, egg, bean sprouts, carrots and onions in tamarind and tomato sauce. Garnished with roasted peanuts.","Thai rice noodles, egg, bean sprouts, carrots and onions in tamarind and tomato sauce. Garnished with roasted peanuts.",T1,T1
+70,70,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T1A,T1A
+71,71,4,4,10.00,10.00,"V2. *Grilled Chicken and Spring Roll<br>Bun Ga va cha gio","V2. *Grilled Chicken and Spring Roll<br>Bun Ga va cha gio",,,V2,V2
+72,72,4,4,10.00,10.00,"V3. *Grilled Pork and Spring Roll<br>Bun Thit nuong va cha gio","V3. *Grilled Pork and Spring Roll<br>Bun Thit nuong va cha gio",,,V3,V3
+73,73,4,4,10.00,10.00,"V4. Grilled Beef<br>Bun Bo	","V4. Grilled Beef<br>Bun Bo	",,,V4,V4
+74,74,4,4,10.00,10.00,"V5. Grilled Chicken<br>Bun Ga","V5. Grilled Chicken<br>Bun Ga",,,V5,V5
+75,75,4,4,10.00,10.00,"V6. Grilled Pork<br>Bun thit nuong	","V6. Grilled Pork<br>Bun thit nuong	",,,V6,V6
+76,76,4,4,0.00,0.00,"V7. Stir Fried Lemon Grass with Beef or Chicken and Spicy Chili<br>Bun bo hoac ga xao xa ot ","V7. Stir Fried Lemon Grass with Beef or Chicken and Spicy Chili<br>Bun bo hoac ga xao xa ot ",,,V7,V7
+78,78,5,5,10.00,10.00,"G1. Grilled Beef<br>Com Bo","G1. Grilled Beef<br>Com Bo",,,G1,G1
+79,79,5,5,10.00,10.00,"G2. Grilled Chicken<br>Com Ga","G2. Grilled Chicken<br>Com Ga",,,G2,G2
+80,80,5,5,10.00,10.00,"G3. Grilled Pork Chop<br>Com Suon","G3. Grilled Pork Chop<br>Com Suon",,,G3,G3
+82,82,5,5,10.00,10.00,"G4. *Grilled Beef and Fried Egg<br>Com Bo va Op la","G4. *Grilled Beef and Fried Egg<br>Com Bo va Op la",,,G4,G4
+83,83,5,5,10.00,10.00,"G5. *Grilled Chicken and Fried Egg<br>Com Ga va Op La","G5. *Grilled Chicken and Fried Egg<br>Com Ga va Op La",,,G5,G5
+84,84,5,5,10.00,10.00,"G6. Grilled Pork Chop and Fried Egg<br>Com Suon va Op La","G6. Grilled Pork Chop and Fried Egg<br>Com Suon va Op La",,,G6,G6
+85,85,5,5,10.00,10.00,"G7. Grilled Pork Chop and Grilled Chicken<br>Com Suon va Ga nuong","G7. Grilled Pork Chop and Grilled Chicken<br>Com Suon va Ga nuong",,,G7,G7
+86,86,5,5,10.00,10.00,"G8. Grilled Beef and Grilled Chicken<br>Com Suon va Ga nuong","G8. Grilled Beef and Grilled Chicken<br>Com Suon va Ga nuong",,,G8,G8
+104,104,9,9,6.50,6.50,"D1. *Fried Bananas W/ Honey, Sesame Seeds and Vanilla Ice Cream","D1. *Fried Bananas W/ Honey, Sesame Seeds and Vanilla Ice Cream",,,D1,D1
+105,105,9,9,6.50,6.50,"D2. Fried Bananas Sticky Rice w/ coconut cream","D2. Fried Bananas Sticky Rice w/ coconut cream",,,D2,D2
+107,107,10,10,3.50,3.50,"B1. *Filtered Vietnamese Coffee with Condensed Milk and Ice","B1. *Filtered Vietnamese Coffee with Condensed Milk and Ice",,,B1,B1
+108,108,10,10,3.50,3.50,"B2. Filtered Vietnamese Hot Coffee with Condensed Milk","B2. Filtered Vietnamese Hot Coffee with Condensed Milk",,,B2,B2
+110,110,10,10,2.50,2.50,"B3. Orange, Apple, Mango Juice","B3. Orange, Apple, Mango Juice",,,B3,B3
+111,111,10,10,3.00,3.00,"B4. Perrier Spakling Bottle Water","B4. Perrier Spakling Bottle Water",,,B4,B4
+112,112,10,10,1.50,1.50,"B5. Spring Water (Bottle)","B5. Spring Water (Bottle)",,,B5,B5
+113,113,10,10,1.50,1.50,"B6. Soft Drinks","B6. Soft Drinks","(Coke, Diet Coke, Sprite, Ginger Ale, Nestea, Orange C- Plus)","(Coke, Diet Coke, Sprite, Ginger Ale, Nestea, Orange C- Plus)",B6,B6
+114,114,10,10,4.00,4.00,"B7. Fresh Fruit Shakes","B7. Fresh Fruit Shakes","(Avocado, Strawberry, Mango, Jackfruit)","(Avocado, Strawberry, Mango, Jackfruit)",B7,B7
+115,115,10,10,4.00,4.00,"B8. Mint Lemonade","B8. Mint Lemonade",,,B8,B8
+116,116,7,7,12.00,12.00,"Zz1. *Sizzling Chicken with Vegetables","Zz1. *Sizzling Chicken with Vegetables","(Your choice of: Satay sauce or black bean sauce)","(Your choice of: Satay sauce or black bean sauce)",Zz1,Zz1
+120,120,11,11,0.00,0.00,"F1. STIR FRIED BASIL EGGPLANT","F1. STIR FRIED BASIL EGGPLANT","Stir fried roasted eggplant w/ mixed vegetables in basil sauce. Served w/ steamed rice","Stir fried roasted eggplant w/ mixed vegetables in basil sauce. Served w/ steamed rice",F1,F1
+121,121,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F1A,F1A
+122,122,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F1B,F1B
+123,123,11,11,12.00,12.00,"C) Beef","C) Beef",,,F1C,F1C
+124,124,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F1D,F1D
+125,125,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,"F1E ","F1E "
+126,126,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,"T1B ","T1B "
+127,127,8,8,12.00,12.00,"C) Beef","C) Beef",,,"T1C ","T1C "
+128,128,8,8,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,"T1D ","T1D "
+129,129,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,"T1E ","T1E "
+130,130,8,8,0.00,0.00,"T2. *THAI RED OR GREEN CURRY","T2. *THAI RED OR GREEN CURRY","Red chili curry, mushrooms, eggplant and mixed vegetable served with rice","Red chili curry, mushrooms, eggplant and mixed vegetable served with rice",T2,T2
+131,131,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T2A,T2A
+132,132,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T2B,T2B
+133,133,8,8,12.00,12.00,"C) Beef","C) Beef",,,T2C,T2C
+134,134,8,8,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,T2D,T2D
+135,135,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,T2E,T2E
+136,136,8,8,0.00,0.00,"T3. SPICY GOLDEN CURRY","T3. SPICY GOLDEN CURRY","Mixed peppers and onions, lemongrass, red chili in Thai curry","Mixed peppers and onions, lemongrass, red chili in Thai curry",T3,T3
+137,137,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T3A,T3A
+138,138,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T3B,T3B
+139,139,8,8,12.00,12.00,"C) Beef","C) Beef",,,T3C,T3C
+140,140,8,8,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,T3D,T3D
+141,141,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,T3E,T3E
+142,142,8,8,0.00,0.00,"T4. PEANUT CURRY","T4. PEANUT CURRY","Mixed vegetables, mushrooms, roasted peanut in special home-made Thai curry","Mixed vegetables, mushrooms, roasted peanut in special home-made Thai curry",T4,T4
+143,143,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T4A,T4A
+144,144,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T4B,T4B
+145,145,8,8,12.00,12.00,"C) Beef","C) Beef",,,T4C,T4C
+147,147,8,8,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,T4D,T4D
+148,148,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,T4E,T4E
+149,149,11,11,0.00,0.00,"F2. SPICY BASIL FRIED RICE","F2. SPICY BASIL FRIED RICE","Fried rice with Thai basil leaf in spicy soya sauce","Fried rice with Thai basil leaf in spicy soya sauce",F2,F2
+150,150,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F2A,F2A
+151,151,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F2B,F2B
+152,152,11,11,12.00,12.00,"C) Beef","C) Beef",,,F2C,F2C
+153,153,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F2D,F2D
+154,154,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F2E,F2E
+155,155,11,11,0.00,0.00,"F3. PHUKET MANGO","F3. PHUKET MANGO","Stir fried fresh mango with ginger, soya sauce, roasted garlic served w/ rice","Stir fried fresh mango with ginger, soya sauce, roasted garlic served w/ rice",F3,F3
+156,156,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F3A,F3A
+157,157,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F3B,F3B
+158,158,11,11,12.00,12.00,"C) Beef","C) Beef",,,F3C,F3C
+159,159,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F3D,F3D
+160,160,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F3E,F3E
+167,167,11,11,0.00,0.00,"F4. “NOODLE HOUSE” FRIED RICE","F4. “NOODLE HOUSE” FRIED RICE","Stir fried with eggs, mixed beans and vegetables","Stir fried with eggs, mixed beans and vegetables",F4,F4
+168,168,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F4A,F4A
+169,169,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F4B,F4B
+170,170,11,11,12.00,12.00,"C) Beef","C) Beef",,,F4C,F4C
+171,171,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F4D,F4D
+172,172,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F4E,F4E
+173,173,11,11,0.00,0.00,"F5. *STIR FRIED CASHEWS NUTS","F5. *STIR FRIED CASHEWS NUTS","Served with vegetables and steam rice","Served with vegetables and steam rice",F5,F5
+174,174,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F5A,F5A
+175,175,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F5B,F5B
+176,176,11,11,12.00,12.00,"C) Beef","C) Beef",,,F5C,F5C
+177,177,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F5D,F5D
+178,178,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F5E,F5E
+179,179,11,11,0.00,0.00,"F6. *CANTONESE CHOW MEIN","F6. *CANTONESE CHOW MEIN","Crispy or soft egg noodles with vegetables in garlic sauce","Crispy or soft egg noodles with vegetables in garlic sauce",F6,F6
+180,180,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F6A,F6A
+181,181,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F6B,F6B
+182,182,11,11,12.00,12.00,"C) Beef","C) Beef",,,F6C,F6C
+183,183,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F6D,F6D
+184,184,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F6E,F6E
+185,185,11,11,0.00,0.00,"F7. *STIR FRIED HO FUN","F7. *STIR FRIED HO FUN","Thick rice noodles, mixed vegetables in mushroom soya sauce (egg)","Thick rice noodles, mixed vegetables in mushroom soya sauce (egg)",F7,F7
+186,186,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F7A,F7A
+187,187,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F7B,F7B
+188,188,11,11,12.00,12.00,"C) Beef","C) Beef",,,F7C,F7C
+189,189,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F7D,F7D
+190,190,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F7E,F7E
+191,191,11,11,0.00,0.00,"F8. SHANGHAI NOODLES","F8. SHANGHAI NOODLES","Thick wheat noodles stir-fried in a mushroom soya sauce (egg)","Thick wheat noodles stir-fried in a mushroom soya sauce (egg)",F8,F8
+192,192,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F8A,F8A
+193,193,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F8B,F8B
+194,194,11,11,12.00,12.00,"C) Beef","C) Beef",,,F8C,F8C
+195,195,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F8D,F8D
+196,196,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F8E,F8E
+197,197,11,11,0.00,0.00,"F9. *SINGAPORE VEMICELLI","F9. *SINGAPORE VEMICELLI","Thin rice noodles stir- fried in a curry paste (egg)","Thin rice noodles stir- fried in a curry paste (egg)",F9,F9
+198,198,11,11,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,F9A,F9A
+199,199,11,11,12.00,12.00,"B) Chicken","B) Chicken",,,F9B,F9B
+200,200,11,11,12.00,12.00,"C) Beef","C) Beef",,,F9C,F9C
+201,201,11,11,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,F9D,F9D
+208,208,11,11,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,F9E,F9E
+209,209,11,11,12.00,12.00,"F10. * SWEET AND SOUR CHICKEN","F10. * SWEET AND SOUR CHICKEN","Fresh pineapple, onions, green and red peppers glazed with sweet and sour sauce
+ served w/ rice
+","Fresh pineapple, onions, green and red peppers glazed with sweet and sour sauce
+ served w/ rice
+",F10,F10
+210,210,11,11,12.00,12.00,"F11. CRISPY ORANGE BEEF OR CHICKEN","F11. CRISPY ORANGE BEEF OR CHICKEN","Fresh onions, green and red peppers glazed with a sweet honey house sauce served w/ rice
+","Fresh onions, green and red peppers glazed with a sweet honey house sauce served w/ rice
+",F11,F11
+212,212,10,10,4.00,4.00,"B9. Bubble tea (with pearl) ","B9. Bubble tea (with pearl) ","(Taro, Mango, Strawberry, Honeydew, Mint, Coconut)","(Taro, Mango, Strawberry, Honeydew, Mint, Coconut)",B9,B9
+226,226,3,3,7.00,7.00,"SO7. HOT AND SOUR SOUP","SO7. HOT AND SOUR SOUP","-Bamboo shoots and mushrooms in mild eggs drop soup","-Bamboo shoots and mushrooms in mild eggs drop soup",SO7,SO7
+229,229,8,8,0.00,0.00,"T5. PINEAPPLE CURRY","T5. PINEAPPLE CURRY","Mixed vegetables, mushrooms, fresh pineapple in special home-made Thai curry","Mixed vegetables, mushrooms, fresh pineapple in special home-made Thai curry",T5,T5
+230,230,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T5A,T5A
+231,231,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T5B,T5B
+232,232,8,8,12.00,12.00,"C) Beef","C) Beef",,,T5C,T5C
+233,233,8,8,13.00,13.00,"D) Tiger shrimp","D) Tiger shrimp",,,T5D,T5D
+234,234,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,T5E,T5E
+235,235,8,8,0.00,0.00,"T6. *BASIL THAI SPICY NOODLE","T6. *BASIL THAI SPICY NOODLE","Thai rice noodle, egg, onions, carrots and basil leaves in soda sauce","Thai rice noodle, egg, onions, carrots and basil leaves in soda sauce",T6,T6
+236,236,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T6A,T6A
+237,237,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T6B,T6B
+238,238,8,8,12.00,12.00,"C) Beef","C) Beef",,,T6C,T6C
+239,239,8,8,13.00,13.00,"D) Tiger shrimp","D) Tiger shrimp",,,T6D,T6D
+240,240,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels",,,T6E,T6E
+251,251,9,9,6.00,6.00,"D3. Mango Sticky Rice","D3. Mango Sticky Rice",,,D3,D3
+252,252,9,9,4.00,4.00,"D4. Tropical Ice Cream (Mango or Cherry Or Chocolate)","D4. Tropical Ice Cream (Mango or Cherry Or Chocolate)",,,D4,D4
+273,273,8,8,0.00,0.00,"T7. *THAI FRIED RICE","T7. *THAI FRIED RICE","Thai fried rice w/ pineapples, cashew nuts, green bean and tomato sauce (egg)","Thai fried rice w/ pineapples, cashew nuts, green bean and tomato sauce (egg)",T7,T7
+274,274,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T7A,T7A
+275,275,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T7B,T7B
+276,276,8,8,12.00,12.00,"C) Beef","C) Beef",,,T7C,T7C
+277,277,8,8,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,T7D,T7D
+278,278,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,T7E,T7E
+279,279,8,8,0.00,0.00,"T8. PAD SEW","T8. PAD SEW","Stir fried thick rice noodle w/ mixed vegetable in mushroom soya sauce","Stir fried thick rice noodle w/ mixed vegetable in mushroom soya sauce",T8,T8
+280,280,8,8,12.00,12.00,"A) Tofu and Vegetable","A) Tofu and Vegetable",,,T8A,T8A
+281,281,8,8,12.00,12.00,"B) Chicken","B) Chicken",,,T8B,T8B
+282,282,8,8,12.00,12.00,"C) Beef","C) Beef",,,T8C,T8C
+283,283,8,8,13.00,13.00,"D) Tiger Shrimp","D) Tiger Shrimp",,,T8D,T8D
+284,284,8,8,13.50,13.50,"E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)","E) Seafood ( Tiger Shrimps, Calamari, Scallops, Crab and Mussels)",,,T8E,T8E
+289,289,2,2,9.50,9.50,"S1. HOUSE MANGO SALAD","S1. HOUSE MANGO SALAD","-Shrimp andchicken skewers served on top of fresh shredded mango mixed w/ onions, red/ green peppers and cashews tossed in tamarind vinaigrette","-Shrimp andchicken skewers served on top of fresh shredded mango mixed w/ onions, red/ green peppers and cashews tossed in tamarind vinaigrette",S1,S1
+290,290,2,2,8.50,8.50,"S2. LOTTUS SALAD","S2. LOTTUS SALAD","-Tiger shrimp, fresh lotus root, carrots and onions in house special sauce","-Tiger shrimp, fresh lotus root, carrots and onions in house special sauce",S2,S2
+293,293,1,1,5.00,5.00,"A7. TOFU and VEGGIE FRESH ROLLS (2)","A7. TOFU and VEGGIE FRESH ROLLS (2)","-Rice paper with crispy tofu, vegetables and vermicelli","-Rice paper with crispy tofu, vegetables and vermicelli",A7,A7
+294,294,1,1,6.50,6.50,"A8. *CHICKEN SATAY SKEWERS (3) ","A8. *CHICKEN SATAY SKEWERS (3) ","-Marinated with Thai spices and grilled, served with peanut sauce","-Marinated with Thai spices and grilled, served with peanut sauce",A8,A8
+295,295,1,1,7.00,7.00,"A9. BEEF SATAY SKEWERS (3)","A9. BEEF SATAY SKEWERS (3)","-Marinated with Thai spices and grilled, served with peanut sauce","-Marinated with Thai spices and grilled, served with peanut sauce",A9,A9
+296,296,1,1,7.00,7.00,"A10. COCONUT SHRIMP (6)","A10. COCONUT SHRIMP (6)","-Coconut marinated shrimp, golden fried and served with plum sauce","-Coconut marinated shrimp, golden fried and served with plum sauce",A10,A10
+297,297,1,1,6.50,6.50,"A9. BEEF SATAY SKEWERS (3)","A9. BEEF SATAY SKEWERS (3)","-Marinated with Thai spices and grilled, served with peanut sauce","-Marinated with Thai spices and grilled, served with peanut sauce","A9 ","A9 "
+298,298,1,1,7.00,7.00,"A10. SHRIMP SATAY SKEWERS (2)","A10. SHRIMP SATAY SKEWERS (2)","-Marinated with Thai spices and grilled, served with peanut sauce","-Marinated with Thai spices and grilled, served with peanut sauce",A10,A10
+299,299,1,1,6.00,6.00,"A11. CRISPY TIGER SHRIMPS (6)","A11. CRISPY TIGER SHRIMPS (6)","-Crispy breaded tiger shrimps","-Crispy breaded tiger shrimps",A11,A11
+300,300,1,1,7.50,7.50,"A12. CRISPY CALAMARI","A12. CRISPY CALAMARI","- Lightly seasoned crispy calamari","- Lightly seasoned crispy calamari",A12,A12
+301,301,1,1,5.00,5.00,"A13. CRISPY TOFU","A13. CRISPY TOFU","-Crispy marinated tofu","-Crispy marinated tofu",A13,A13
+302,302,1,1,6.00,6.00,"A14. *CRISPY WONTON (8)","A14. *CRISPY WONTON (8)","-Crispy marinated, stuffed chicken/ shrimp wontons","-Crispy marinated, stuffed chicken/ shrimp wontons",A14,A14
+303,303,1,1,8.50,8.50,"A15. MUSSELS WITH BLACK BEAN SAUCE","A15. MUSSELS WITH BLACK BEAN SAUCE",#NAME?,#NAME?,A15,A15
+304,304,1,1,8.00,8.00,"A16. CHICKEN WINGS (8)","A16. CHICKEN WINGS (8)",#NAME?,#NAME?,A16,A16
+305,305,6,6,0.00,0.00,"P1. *House Special Rice Noodle Soup","P1. *House Special Rice Noodle Soup",,,P1,P1
+306,306,6,6,8.00,8.00,"A) Regular","A) Regular",,,"P1A ","P1A "
+307,307,6,6,9.00,9.00,"B) Large","B) Large",,,"P1B ","P1B "
+308,308,6,6,0.00,0.00,"P2. House Special Satay Rice Noodle Soup","P2. House Special Satay Rice Noodle Soup",,,P2,P2
+309,309,6,6,8.00,8.00,"A) Regular","A) Regular",,,"P2A ","P2A "
+310,310,6,6,9.00,9.00,"B) Large","B) Large",,,"P2B ","P2B "
+311,311,6,6,0.00,0.00,"P3. *Chicken Rice Noodle Soup","P3. *Chicken Rice Noodle Soup",,,P3,P3
+312,312,6,6,8.00,8.00,"A) Regular","A) Regular",,,P3A,P3A
+313,313,6,6,9.00,9.00,"B) Large","B) Large",,,P3B,P3B
+314,314,6,6,0.00,0.00,"P4. Chicken, Well Done Beef Rice Noodle Soup ","P4. Chicken, Well Done Beef Rice Noodle Soup ",,,P4,P4
+315,315,6,6,8.00,8.00,"A) Regular","A) Regular",,,P4A,P4A
+316,316,6,6,9.00,9.00,"B) Large","B) Large",,,P4B,P4B
+317,317,6,6,0.00,0.00,"P5. *Rare Beef Rice Noodle Soup","P5. *Rare Beef Rice Noodle Soup",,,P5,P5
+318,318,6,6,8.00,8.00,"A) Regular","A) Regular",,,P5A,P5A
+319,319,6,6,9.00,9.00,"B) Large","B) Large",,,P5B,P5B
+320,320,6,6,0.00,0.00,"P6. Rare Beef, Well Done Beef Rice Noodle Soup ","P6. Rare Beef, Well Done Beef Rice Noodle Soup ",,,P6,P6
+321,321,6,6,8.00,8.00,"A) Regular","A) Regular",,,P6A,P6A
+322,322,6,6,9.00,9.00,"B) Large","B) Large",,,P6B,P6B
+323,323,6,6,0.00,0.00,"P7. Rare Beef, Tripe Rice Noodle Soup ","P7. Rare Beef, Tripe Rice Noodle Soup ",,,P7,P7
+324,324,6,6,8.00,8.00,"A) Regular","A) Regular",,,P7A,P7A
+325,325,6,6,9.00,9.00,"B) Large","B) Large",,,P7B,P7B
+326,326,6,6,0.00,0.00,"P8. Rare Beef, Beef Balls Rice Noodle Soup","P8. Rare Beef, Beef Balls Rice Noodle Soup",,,P8,P8
+327,327,6,6,8.00,8.00,"A) Regular","A) Regular",,,P8A,P8A
+328,328,6,6,9.00,9.00,"B) Large","B) Large",,,P8B,P8B
+329,329,6,6,0.00,0.00,"P9. Well Done Beef Rice Noodle Soup","P9. Well Done Beef Rice Noodle Soup",,,P9,P9
+330,330,6,6,8.00,8.00,"A) Regular","A) Regular",,,P9A,P9A
+331,331,6,6,9.00,9.00,"B) Large","B) Large",,,P9B,P9B
+332,332,6,6,0.00,0.00,"P10. *Well Done Beef, Tripe Rice Noodle Soup ","P10. *Well Done Beef, Tripe Rice Noodle Soup ",,,P10,P10
+333,333,6,6,8.00,8.00,"A) Regular","A) Regular",,,P10A,P10A
+334,334,6,6,9.00,9.00,"B) Large","B) Large",,,P10B,P10B
+335,335,6,6,0.00,0.00,"P11. Well Done Beef, Beef Balls Rice Noodle Soup ","P11. Well Done Beef, Beef Balls Rice Noodle Soup ",,,P11,P11
+336,336,6,6,8.00,8.00,"A) Regular","A) Regular",,,P11A,P11A
+337,337,6,6,9.00,9.00,"B) Large","B) Large",,,P11B,P11B
+338,338,6,6,0.00,0.00,"P12. Rare Beef, Well Done Beef, Tripe Rice Noodle Soup ","P12. Rare Beef, Well Done Beef, Tripe Rice Noodle Soup ",,,P12,P12
+339,339,6,6,8.00,8.00,"A) Regular","A) Regular",,,P12A,P12A
+340,340,6,6,9.00,9.00,"B) Large","B) Large",,,P12B,P12B
+341,341,6,6,0.00,0.00,"P13. Rare Beef, Well Done Beef, and Beef Balls Rice Noodle Soup ","P13. Rare Beef, Well Done Beef, and Beef Balls Rice Noodle Soup ",,,P13,P13
+342,342,6,6,8.00,8.00,"A) Regular","A) Regular",,,P13A,P13A
+343,343,6,6,9.00,9.00,"B) Large","B) Large",,,P13B,P13B
+344,344,6,6,0.00,0.00,"P14. Beef Balls Rice Noodle Soup","P14. Beef Balls Rice Noodle Soup",,,P14,P14
+345,345,6,6,8.00,8.00,"A) Regular","A) Regular",,,P14A,P14A
+346,346,6,6,9.00,9.00,"B) Large","B) Large",,,P14B,P14B
+347,347,6,6,0.00,0.00,"P15. Vegetable Rice Noodle Soup (Chicken Broth)","P15. Vegetable Rice Noodle Soup (Chicken Broth)",,,P15,P15
+348,348,6,6,8.00,8.00,"A) Regular","A) Regular",,,P15A,P15A
+349,349,6,6,9.00,9.00,"B) Large","B) Large",,,P15B,P15B
+350,350,4,4,10.00,10.00,"A) Beef ","A) Beef ",,,"V7A ","V7A "
+351,351,4,4,10.00,10.00,"B) Chicken","B) Chicken",,,"V7B ","V7B "
+354,354,7,7,12.00,12.00,"Zz2. *Sizzling Beef with Vegetables","Zz2. *Sizzling Beef with Vegetables","(Your choice of: Satay sauce or black bean sauce)","(Your choice of: Satay sauce or black bean sauce)",Zz2,Zz2
+357,357,7,7,13.00,13.00,"Zz3. Sizzling Tiger Shrimp with Vegetables","Zz3. Sizzling Tiger Shrimp with Vegetables","(Your choice of: Satay sauce or black bean sauce)","(Your choice of: Satay sauce or black bean sauce)",Zz3,Zz3
+360,360,7,7,13.50,13.50,"Zz4. *Sizzling Seafood with Vegetables","Zz4. *Sizzling Seafood with Vegetables","(Your choice of: Satay sauce or black bean sauce)","(Your choice of: Satay sauce or black bean sauce)",Zz4,Zz4
+365,365,11,11,12.00,12.00,"F12. STIR FRIED LEMON GRASS WITH BEEF OR CHICKENandSPICY CHILI ","F12. STIR FRIED LEMON GRASS WITH BEEF OR CHICKENandSPICY CHILI ","Stir fried mixed peppers with onions, lemongrass and hot chili","Stir fried mixed peppers with onions, lemongrass and hot chili",F12,F12
+368,368,2,2,7.50,7.50,"S3. *VEGGIE MANGO SALAD","S3. *VEGGIE MANGO SALAD","-Fresh shredded mango mixed w/ onions, red/ green peppers 
+     and cashews tossed with tamarind vinaigrette
+","-Fresh shredded mango mixed w/ onions, red/ green peppers 
+     and cashews tossed with tamarind vinaigrette
+",S3,S3
+369,369,2,2,8.00,8.00,"S4. *VIETNAMESE CABBAGE SALAD","S4. *VIETNAMESE CABBAGE SALAD","-Chicken tossed with cabbage, carrot, green onion and peanut in Vietnamese spicy dressing","-Chicken tossed with cabbage, carrot, green onion and peanut in Vietnamese spicy dressing",S4,S4
+371,371,8,8,12.00,12.00,"T9. THAI GINGER CHICKEN OR BEEF","T9. THAI GINGER CHICKEN OR BEEF","Your choice of marinated chicken or beef sautéed in our sesame soy ginger sauce. Served with steam rice","Your choice of marinated chicken or beef sautéed in our sesame soy ginger sauce. Served with steam rice",T9,T9

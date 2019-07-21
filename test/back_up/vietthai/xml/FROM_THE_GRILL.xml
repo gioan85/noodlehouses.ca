@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<foods>
+	<food id="1">
+		<type>title</type>
+		<name>FROM THE GRILL</name>
+		<value></value>
+	</food>
+	<food id="2">
+		<type>food</type>
+		<name>G1. Grilled Beef<br>Com Bo</name>
+		<value>9.50</value>
+	</food>
+	<food id="3">
+		<type>food</type>
+		<name>G2. Grilled Chicken<br>Com Ga</name>
+		<value>9.50</value>
+	</food>
+	<food id="4">
+		<type>food</type>
+		<name>G3. Grilled Pork Chop<br>Com Suon</name>
+		<value>9.50</value>
+	</food>
+	<food id="5">
+		<type>food</type>
+		<name>G4.*Grilled Salmon<br>Com Ca Samon nuong</name>
+		<value>11.00</value>
+	</food>
+	<food id="6">
+		<type>food</type>
+		<name>G5. *Grilled Beef & Fried Egg<br>Com Bo & Op la</name>
+		<value>9.50</value>
+	</food>
+	<food id="7">
+		<type>food</type>
+		<name>G6. *Grilled Chicken & Fried Egg<br>Com Ga & Op La</name>
+		<value>9.50</value>
+	</food>
+	<food id="8">
+		<type>food</type>
+		<name>G7. Grilled Pork Chop & Fried Egg<br>Com Suon & Op La</name>
+		<value>9.50</value>
+	</food>
+	<food id="9">
+		<type>food</type>
+		<name>G8. Grilled Pork Chop & Grilled Chicken<br>Com Suon & Ga nuong</name>
+		<value>10.75</value>
+	</food>
+	<food id="10">
+		<type>food</type>
+		<name>G9. Grilled Beef & Grilled Chicken<br>Com Bo & Ga Nuong</name>
+		<value>10.75</value>
+	</food>
+	<food id="11">
+		<type>food</type>
+		<name>G10. *Grilled Beef/ Chicken/Pork Chop & Crispy Beancurd Wrapped With Shrimp<br>Com Bo/ Ga/ Suon & Tau hu ky</name>
+		<value>11.75</value>
+	</food>
+	<food id="12">
+		<type>food</type>
+		<name>G11. *Grilled Salmon & Grilled Beef/ Chicken/Pork chop<br>Com ca Samon nuong & bo/ga/ suong nuong</name>
+		<value>11.75</value>
+	
+	</food>
+	
+</foods>
+
+

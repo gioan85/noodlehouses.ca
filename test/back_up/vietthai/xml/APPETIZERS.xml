@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<foods>
+	<food id="1">
+		<type>title</type>
+		<name>APPETIZERS</name>
+		<value></value>
+	</food>
+	<food id="2">
+		<type>food</type>
+		<name>A1.  *SIGNATURE PLATTER(Đặc biệt)<br>- Crispy shrimp spring roll (1),<br>Crispy chicken spring roll (1),<br>- Crispy Calamari (4),<br>Crispy wonton (4), Fresh rolls (2)</name>
+		<value>11.00</value>
+	</food>
+	<food id="3">
+		<type>food</type>
+		<name>A2. *CRISPY SHRIMP SPRING ROLLS (2) (Chả giò tôm)<br>-Marinated tiger shrimp & mixed vegetables</name>
+		<value>4.75</value>
+	</food>
+	<food id="4">
+		<type>food</type>
+		<name>A3. *CRISPY CHICKEN SPRING ROLLS (2) (Cha gio ga)<br>-Ground chicken & mixed vegetables</name>
+		<value>4.50</value>
+	
+	</food>
+	<food id="5">
+		<type>food</type>
+		<name>A4. CRISPY VEGETABLE SPRING ROLLS (2) (Cha gio chay)<br>- Mixed vegetables</name>
+		<value>4.50</value>
+	</food>
+	<food id="6">
+		<type>food</type>
+		<name>A5. *FRESH ROLLS (2) (Goi cuon nem nuong)<br>-Rice paper with BBQ grilled pork sausage & vermicelli
+</name>
+		<value>4.75</value>
+	</food>
+	<food id="7">
+		<type>food</type>
+		<name>A6. SHRIMP & PORK FRESH ROLLS (2) (Goi cuon tom thit)<br>-Rice paper with shrimp, pork, vegetables & vermicelli
+</name>
+		<value> 5.00</value>
+	</food>
+	
+	<food id="8">
+		<type>food</type>
+		<name>A7. TOFU & VEGGIE FRESH ROLLS (2) (Goi cuon chay)<br>-Rice paper with crispy tofu, vegetables & vermicelli
+</name>
+		<value>4.50</value>
+	</food>
+	<food id="9">
+		<type>food</type>
+		<name>A8. *CHICKEN SATAY SKEWERS (2)( Ga sa-te)<br>-Marinated with Thai spices and grilled, served with peanut sauce</name>
+		<value>6.50</value>
+	</food>
+	<food id="10">
+		<type>food</type>
+		<name>A9. SHRIMP SATAY SKEWERS (2) (Tom sa-te)<br>-Marinated with Thai spices and grilled, served with peanut sauce</name>
+		<value>6.50</value>
+	</food>
+	
+	<food id="11">
+		<type>food</type>
+		<name>A10. CRISPY TIGER SHRIMPS (5) (Tom chien gion)<br>-Crispy breaded tiger shrimps</name>
+		<value>6.50</value>
+	</food>
+	<food id="12">
+		<type>food</type>
+		<name>A11. CRISPY CALAMARI (10) (Muc chien gion)<br>-Lightly seasoned crispy calamari</name>
+		<value> 7.50</value>
+	</food>
+	<food id="13">
+		<type>food</type>
+		<name>A12. CRISPY SHRIMP BEANCURD (Tau hu ky)<br>-Crispy dried beancurd wrapped with shrimp</name>
+		<value>7.50</value>
+	</food>
+	
+	<food id="14">
+		<type>food</type>
+		<name>A13. CRISPY TOFU(Tau hu chien)<br>-Crispy marinated tofu
+</name>
+		<value>5.50</value>
+	</food>
+	<food id="15">
+		<type>food</type>
+		<name>A14. *CRISPY WONTON (8)(Wonton chien)<br>-Crispy marinated, stuffed chicken/ shrimp wontons</name>
+		<value>6.50</value>
+	</food>
+	<food id="16">
+		<type>food</type>
+		<name>A15. MUSSELS WITH BLACK BEAN SAUCE(Mussels xao tuong den)<br>-Stir- fried and marinated with house spices</name>
+		<value>8.50</value>
+	</food>
+	
+	
+	
+</foods>
+
+

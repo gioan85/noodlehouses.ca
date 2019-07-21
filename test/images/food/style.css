@@ -1,0 +1,124 @@
+html,body {
+	height: 100%;
+}
+body {
+	margin: 0;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	background: url(../images/bg.jpg);
+	background-size: 100% 100%;
+}
+
+.topbar {
+	text-align: center;
+	width:100%;
+	height:90px;
+}
+.topbar .fullBar {
+	width: 100%;
+	max-width: 1024px;
+	/*min-height: 90px;*/
+}
+.topbar .leftBar {
+	left:0px;
+	top:0px;
+	position:absolute;
+	z-index:3;
+}
+.topbar .middleBar {
+	width: 100%;
+	max-height: 90px;
+	left:0px;
+	top:0px;	
+	position:absolute;
+	z-index:1;
+}
+.topbar .rightBar {
+	right:0px;
+	top:0px;
+	position:absolute;
+	z-index:2;
+}
+
+.footer_bar .fullBar {
+	width: 100%;
+	max-width: 1024px;
+	/*min-height: 90px;*/
+}
+
+.footer_bar {
+	text-align: center;
+	width:100%;
+	height:83px;
+	position:absolute;
+	left:0px;
+	bottom: 0;
+}
+
+.footer_bar .bot_left_bar {
+	left:0px;
+	top:0px;
+	position:absolute;
+	z-index:3;
+}
+.footer_bar .bot_middle_bar {
+	width: 100%;
+	max-height: 83px;
+	left:0px;
+	top:0px;	
+	position:absolute;
+	z-index:1;
+}
+.footer_bar .bot_right_bar {
+	right:0px;
+	top:0px;
+	position:absolute;
+	z-index:2;
+}
+
+.engage-content {
+	position: absolute;
+	width: 1034px;
+	height: 808px;
+	margin: 0 auto;
+
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+.ie11 .engage-content {
+	height: 820px;
+}
+.touch .engage-content {
+	height: 822px;
+}
+.engage-content iframe {
+	border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.topbar, .footer_bar {height:auto;}
+	.topbar .fullBar { display: block;}
+	.topbar .leftBar { display: none;}
+	.topbar .middleBar { display: none;}
+	.topbar .rightBar { display: none;}
+	.footer_bar .fullbar{ display:block;}
+	.footer_bar .bot_left_bar, .footer_bar .bot_right_bar, .footer_bar .bot_middle_bar{ display:none;}
+}
+@media only screen and (min-width: 1024px){
+	.topbar {height:90px;}
+	.topbar .fullBar { display: none;}
+	.topbar .leftBar { display: block;}
+	.topbar .middleBar { display: block;}
+	.topbar .rightBar { display: block;}
+	.footer_bar{ height:83px;}
+	.footer_bar .fullbar{ display:none;}
+	.footer_bar .bot_left_bar, .footer_bar .bot_right_bar, .footer_bar .bot_middle_bar{ display:block;}
+}
+

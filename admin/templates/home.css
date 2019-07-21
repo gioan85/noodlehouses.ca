@@ -1,0 +1,200 @@
+/***********************/
+/***** prod shouts *****/
+/***********************/
+#left-col {
+	float:left;
+	width:535px;
+}
+#prod-columns {
+	float:left;
+	width:535px;
+	margin-bottom:38px;
+}
+.cell1 {
+	width:185px;
+}
+.cell2 {
+	width:185px;
+}
+.cell3 {
+	width:165px;
+}
+#left-col #prod-row {
+ 	float:left;
+	width:535px;
+}
+#left-col #prod-row .prod-shot {
+	float:left;
+}
+#left-col #callout-row {
+ 	float:left;
+	width:535px;
+}
+#left-col #callout-row .title-image {
+	float:left; width:173px; margin-left:3px;
+}
+#dashed-bg {
+	margin-top:10px;
+	float:left;
+	width:535px;
+	background:url(images/hp_dot_tile.gif) transparent 0 0 repeat-y
+}
+#text-row {
+	float:left;
+	width:535px;
+	
+}
+.text {
+	float:left;
+	font-family:verdana,sans-serif;
+	font-size:11px;
+	line-height:16px;
+	color:#999;
+}
+#text-row .cell1,
+#link-row .cell1,
+#text-row .cell2,
+#link-row .cell2 {
+ 	width:165px;
+	padding-right:20px;
+}
+#link-row {
+	float:left;
+	width:535px;
+	margin-top:30px;
+}
+#link-row .linked {
+	float:left;
+	text-align:right;
+}
+#link-row .linked a {
+	font-style:italic;
+	font-family:verdana,sans-serif;
+	font-size:9px;
+	line-height:12px;
+}
+
+/***********************/
+/***** latest-news *****/
+/***********************/
+#latest-news {
+  float:left;
+  margin:0;
+  padding:0 0 21px 0;
+  background:url(images/latest_news_bottom2.gif) transparent 0 100% no-repeat;
+  clear:both; overflow:hidden;
+}
+#latest-news h2 {
+  
+  height:31px;
+  margin:0;
+  padding:0;
+  text-indent:-9999px;
+  text-decoration:none;
+  background:url(images/latest_news_top2.gif) transparent 0 0 no-repeat;
+}
+#latest-news ul {
+  margin:0;
+  padding:0 30px 0 0;
+  list-style:none;
+  clear:both;
+  background:url(images/latest_news_bg2.gif) repeat-y;
+}
+#latest-news ul li {
+  margin:0;
+  padding:5px 20px;
+  color:#999;
+  border-bottom:1px solid #CCC; 
+  overflow:hidden; 
+  ont:bold 11px/16px verdana,sans-serif;
+}
+#latest-news ul li a,
+#latest-news ul li a:link,
+#latest-news ul li a:visited,
+#latest-news ul li a:active {
+  font-weight:normal;
+  color:#333;
+}
+#latest-news ul li.all {
+  text-align:right;
+}
+#latest-news ul li.all a,
+#latest-news ul li.all a:link,
+#latest-news ul li.all a:visited,
+#latest-news ul li.all a:active {
+  display:inline;
+  color:#dc2823;
+  font-weight:bold;
+}
+
+
+/***********************/
+/***** routing *********/
+/***********************/
+#routing {
+  float:left;
+  width:174px;
+  margin:0 0 0 0;
+  padding:0 0 10px 0;
+  
+}
+#routing-trim {
+  margin:0 0 0 10px;
+ 
+}
+#routing ul {
+  margin:0;
+  padding:10px 0 0 0;
+  list-style:none;
+ 
+}
+#routing ul li {
+  margin:10px 9px 0 10px;
+  padding:0;
+}
+#routing ul li.first {
+  margin-top:0;
+}
+#routing ul li a {
+  display:block;
+  width:145px;
+  text-indent:-9999px;
+  text-decoration:none;
+}
+#routingsolutions a  		   { height:68px; background:url(images/routing_industry_solutions.gif) transparent 0 0 no-repeat; }
+#routingconfigurator a     { height:68px; background:url(images/routing_configurator.gif) transparent 0 0 no-repeat; }
+#routingdownloads a        { height:53px; background:url(images/routing_downloads.gif) transparent 0 0 no-repeat; }
+#routingknowledgebase a    { height:68px; background:url(images/routing_knowledgebase.gif) transparent 0 0 no-repeat; }
+#routingtestimonials a     { height:64px; background:url(images/routing_testimonials.gif) transparent 0 0 no-repeat; }
+#routingstories a          { height:64px; background:url(images/routing_stories.gif) transparent 0 0 no-repeat; }
+#routingforums a           { height:53px; background:url(images/routing_forums.gif) transparent 0 0 no-repeat; }
+#routingdealregistration a { height:53px; background:url(images/routing_deal_registration.gif) transparent 0 0 no-repeat; }
+
+#routingfacebook a,
+#routingtwitter a {
+	padding-left:38px;
+	line-height:32px;
+	text-indent:0 !important;
+}
+#routingfacebook a {
+	background:url(images/icon_facebook.gif) transparent 0 0 no-repeat;
+}
+#routingtwitter a {
+	background:url(images/icon_twitter.gif) transparent 0 0 no-repeat;
+}
+#routingfacebook a:hover,
+#routingtwitter a:hover {
+  text-decoration:underline !important;
+}
+
+/***********************/
+/***** features ********/
+/***********************/
+#home-features p {
+  float:left;
+  margin:0 0 0 10px;
+  padding:0 0 15px 0;
+}
+#home-features p.first {
+  margin-left:0;
+}

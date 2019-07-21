@@ -1,0 +1,476 @@
+/***********************/
+/***** flash-bump ******/
+/***********************/
+h3.category-flash-bump {
+  margin-bottom:165px;
+}
+#category-flash {
+  position:absolute;
+  top:255px;
+  left:212px;
+  padding-bottom:20px;
+  background:transparent url(images/dots.gif) 0 100% repeat-x;
+  z-index: 33;
+}
+
+
+/***********************/
+/***** prod-image ******/
+/***********************/
+#prod-image {
+  float:left;
+  width:257px;
+  padding:15px 0;
+}
+#prod-image ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#prod-image li {
+  float:left;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+#prod-image a,
+#prod-image a:link,
+#prod-image a:visited,
+#prod-image a:active {
+  display:block;
+  text-align:center;
+  margin:0;
+  padding:5px;
+}
+#prod-image li.detail,
+#prod-image li.zoom {
+  float:none;
+  display:block;
+}
+#prod-image li.zoom a,
+#prod-image li.zoom a:link,
+#prod-image li.zoom a:visited,
+#prod-image li.zoom a:active {
+  text-align:right;
+}
+
+#prod-desc {
+  float:right;
+  width:257px;
+  padding:15px 0;
+}
+#prod-desc ul.buynow {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#prod-desc ul.buynow li {
+  margin:1px 0;
+  padding:0 0 2px 0;
+  background:url(images/bg_buynow_bottom.gif) #e6e6e6 0 100% no-repeat;
+}
+#prod-desc ul.buynow li a,
+#prod-desc ul.buynow li a:link,
+#prod-desc ul.buynow li a:visited,
+#prod-desc ul.buynow li a:active {
+  display:block;
+  height:100%;
+  margin:0;
+  padding:8px 90px 8px 8px;
+  color:#000;
+  font-size:12px;
+  font-weight:normal;
+  background:url(images/bg_buynow.gif) transparent 0 0 no-repeat;
+  text-decoration:none;
+}
+#prod-desc ul.buynow li a:hover {
+  color:#c33;
+}
+#prod-desc ul.buynow li a em {
+  font-style:normal;
+  font-weight:bold;
+}
+#prod-desc ul.buynow li.nobuy a {
+  background-image: url(images/bg_buynow_nobuy.gif) !important;
+}
+/* start eu mod */
+#prod-desc .nobuy li a {
+  background-image: url(images/bg_buynow_nobuy.gif) !important;
+}
+/* end eu mod */
+#prod-desc h4 {
+  margin:20px 0 0 0;
+  padding:0;
+  color:#c33;
+  font-weight:bold;
+  font-size:12px;
+  font-family:verdana;
+}
+
+
+/***********************/
+/***** multi-list ******/
+/***********************/
+ul.multi-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+ul.multi-list li {
+  display:block;
+  margin:0;
+  padding:3px 0;
+}
+ul.multi-list li a,
+ul.multi-list li a:link,
+ul.multi-list li a:visited,
+ul.multi-list li a:active {
+  font-size:11px;
+  color:#c33;
+  font-family:verdana;
+}
+
+ul.multi-list li.pdf {
+  background:url(images/icon_pdf.gif) transparent 0 6px no-repeat;
+}
+ul.multi-list li.pdf a,
+ul.multi-list li.pdf a:link,
+ul.multi-list li.pdf a:visited,
+ul.multi-list li.pdf a:active {
+  padding-left:22px;
+}
+
+ul.multi-list li.button {
+  text-align:center;
+  clear:left;
+}
+ul.multi-list li.button ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+ul.multi-list li.button ul li {
+  margin:0;
+  padding:0;
+  float:left;
+  line-height:16px;
+  text-align:center;
+}
+ul.multi-list li.button ul.certifications {
+  float:left;
+  padding-bottom:20px;
+}
+ul.multi-list li.button ul li.certifications-break {
+  clear:left;
+}
+
+ul.prod-multi-list {
+  margin-top:25px;
+}
+ul.prod-multi-list-left li.button {
+  text-align:left;
+}
+
+
+
+/***********************/
+/***** prod-info *******/
+/***********************/
+#prod-info h4 {
+  margin:0;
+  padding:2px 5px;
+  color:#fff;
+  font-size:12px;
+  background-color:#bd1e1a;
+}
+#prod-info h4.description {
+  width:535px;
+  height:25px;
+  background:url(images/description.gif) transparent 0 0 no-repeat;
+  text-indent:-9999px;
+  text-decoration:none;
+}
+#prod-info p {
+  margin:10px;
+  padding:0;
+}
+#prod-info p.logos {
+  padding:10px 0 0 0;
+  overflow:auto;
+}
+#prod-info p.logos img {
+/*  float:left;*/
+  margin-right:10px;
+}
+#prod-info table {
+  width:533px;
+  border-top:solid 1px #e6e6e6;
+  border-bottom:solid 1px #e6e6e6;
+  border-left:solid 1px #e6e6e6;
+}
+#prod-info table th,
+#prod-info table td {
+  padding:2px 5px;
+  font-size:12px;
+  line-height:18px;
+  border-right:solid 1px #e6e6e6;
+}
+#prod-info tr.row0 td {
+  background-color:#fff;
+}
+#prod-info tr.row1 td {
+  background-color:#e6e6e6;
+}
+
+
+/***********************/
+/***** tabs ************/
+/***********************/
+#tabs ul {
+  float:left;
+  width:535px;
+  margin:20px 0 0 0;
+  padding:0;
+  list-style:none;
+  background-color:#fff;
+}
+#tabs ul li {
+  float:left;
+  margin:0 1px 0 0;
+  padding:0;
+  height:22px;
+}
+
+#tabs ul li a,
+#tabs ul li a:link,
+#tabs ul li a:visited,
+#tabs ul li a:active {
+  height:22px;
+  display:block;
+  text-indent:-9999px;
+  text-decoration:none;
+}
+#tabs ul li#features   { width:81px;  background:url(images/tab_features_a.gif) transparent 0 0 no-repeat; }
+#tabs ul li#technology { width:82px; background:url(images/tab_technology_a.gif) transparent 0 0 no-repeat; }
+#tabs ul li#specs      { width:101px; background:url(images/tab_specs_a.gif) transparent 0 0 no-repeat; }
+#tabs ul li#related    { width:121px; background:url(images/tab_related_a.gif) transparent 0 0 no-repeat; }
+#tabs ul li#overview   { width:81px; background:url(images/tab_overview_a.gif) transparent 0 0 no-repeat; }
+#tabs ul li#faqs       { width:63px; background:url(images/tab_faq_a.gif) transparent 0 0 no-repeat; }
+
+#tabs.features li#features, #tabs li#features a:hover          { width:81px;  background:url(images/tab_features_b.gif) transparent 0 0 no-repeat; }
+#tabs.technology li#technology, #tabs ul li#technology a:hover { width:82px; background:url(images/tab_technology_b.gif) transparent 0 0 no-repeat; }
+#tabs.specs li#specs, #tabs ul li#specs a:hover                { width:101px; background:url(images/tab_specs_b.gif) transparent 0 0 no-repeat; }
+#tabs.related li#related, #tabs ul li#related a:hover          { width:121px; background:url(images/tab_related_b.gif) transparent 0 0 no-repeat; }
+#tabs.overview li#overview, #tabs ul li#overview a:hover       { width:81px; background:url(images/tab_overview_b.gif) transparent 0 0 no-repeat; }
+#tabs.faqs li#faqs, #tabs ul li#faqs a:hover                   { width:63px; background:url(images/tab_faq_b.gif) transparent 0 0 no-repeat; }
+
+#prod-features,
+#prod-technology,
+#prod-specs,
+#prod-related,
+#prod-overview,
+#prod-faqs {
+  display:none;
+}
+#tabs.features #prod-features,
+#tabs.technology #prod-technology,
+#tabs.specs #prod-specs,
+#tabs.related #prod-related,
+#tabs.overview #prod-overview,
+#tabs.faqs #prod-faqs {
+  display:block;
+  clear:left;
+}
+
+
+/***********************/
+/***** prod-technology */
+/***********************/
+#prod-technology table tr th {
+  width:100px;
+}
+
+/***********************/
+/***** prod-specs ******/
+/***********************/
+#prod-specs h4 {
+  font-size:11px;
+}
+#prod-specs p {
+  color:#888;
+  font-size:11px;
+  text-align:center;
+}
+#prod-specs table tr td.setwidth {
+  width:200px;
+}
+
+
+/***********************/
+/***** prod-related ****/
+/***********************/
+#prod-related table tr th {
+  padding:6px;
+  border-right:none;
+  text-align:center;
+  width:85px;
+}
+
+
+/***********************/
+/***** prod-tables *****/
+/***********************/
+#prod-tables h4 {
+  margin:20px 0 5px 0;
+  padding:0;
+  color:#c33;
+  font-weight:bold;
+  font-size:12px;
+  font-family:verdana;
+  background-color:transparent;
+}
+#prod-tables h5 {
+  margin:0;
+  padding:2px 5px;
+  color:#fff;
+  background-color:#bd1e1a;
+}
+#prod-tables p {
+  margin-top:20px;
+  font-size:12px;
+  font-style:italic;
+}
+#prod-tables th {
+  background-color:#d4d4d4;
+  vertical-align:top;
+  text-align:center;
+}
+#prod-tables table tr td {
+  text-align:center;
+  font-size:11px;
+}
+#prod-tables th.left,
+#prod-tables td.left {
+  text-align:left;
+}
+#prod-tables td a,
+#prod-tables td a:link,
+#prod-tables td a:visited,
+#prod-tables td a:active {
+  color:#c33;
+}
+
+
+/***********************/
+/***** prod-overview ***/
+/***********************/
+#prod-overview {
+  /*overflow:auto;*/ /* breaks safari */
+  border-right:solid 1px #e6e6e6;
+}
+#prod-overview table tr td {
+  padding:7px 8px;
+}
+#prod-overview table tr td p {
+  text-align:center;
+}
+
+
+/***********************/
+/***** compchart *******/
+/***********************/
+p.compchart {
+  text-align:center;
+}
+
+
+/***********************/
+/***** product-routing */
+/***********************/
+.product-routing {
+  margin:20px 0;
+  background:transparent url(images/redbox_bg.gif) 100% 0 repeat-y;
+}
+.product-routing-trim1 {
+  position: relative;
+  background:transparent url(images/redbox_top.gif) 100% 0 no-repeat;
+  height:100%;
+}
+.product-routing-trim2 {
+  position: relative;
+  padding-bottom:30px;
+  background:transparent url(images/redbox_bottom.gif) 100% 100% no-repeat;
+  min-height:135px;
+  _height:135px; /* ie only */
+}
+
+.tab {
+  position:absolute;
+  top:0;
+  left:4px;
+}
+.product-routing h4 {
+  margin:0;
+  padding:18px 15px 0 160px;
+  font-weight:normal;
+}
+.product-routing h4 a,
+.product-routing h4 a:link,
+.product-routing h4 a:visited,
+.product-routing h4 a:active {
+  color:#fff;
+}
+.product-routing h5 {
+  margin:0;
+  padding:10px 15px 0 160px;
+  color:#fff;
+  font-weight:normal;
+}
+.product-routing p {
+  margin:0;
+  padding:10px 15px 0 160px;
+  color:#fff;
+}
+.product-routing p a,
+.product-routing p a:link,
+.product-routing p a:visited,
+.product-routing p a:active {
+  color:#fff;
+}
+.product-routing ul {
+  list-style:none;
+  margin:0;
+  padding:5px 0 5px 175px;
+}
+.product-routing ul li {
+  padding:0 15px 0 10px;
+  line-height:18px;
+  background:url(images/redbox_bullet.gif) transparent 0 9px no-repeat;
+}
+.product-routing ul li a,
+.product-routing ul li a:link,
+.product-routing ul li a:visited,
+.product-routing ul li a:active {
+  color:#fff;
+  font-size:11px;
+  font-weight:normal;
+}
+.product-routing p.caption {
+  margin:-12px 0 0 0;
+  padding:0 2px;
+  color:#aaa;
+  font-size:10px;
+  text-align:right;
+  background-color:#fff;
+}
+
+.embed-flash {
+  display: none;
+}
+
+dl.imglist dd .text {
+	font-size: 13px !important;
+}
+
+#prod-faqs table tr.row1 td strong { color:#333; }
+#prod-faqs table tr.row0 td { padding-left:12px; }

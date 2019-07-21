@@ -1,0 +1,17 @@
+[05-Oct-2014 07:04:16 UTC] PHP Warning:  mysqli_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/minhtri95/public_html/includes/functions/database.php on line 8
+[24-Nov-2014 17:48:20 UTC] PHP Fatal error:  Class 'GMT_search' not found in /home/minhtri95/public_html/load_food.php on line 75
+[24-Nov-2014 17:48:24 UTC] PHP Fatal error:  Class 'GMT_search' not found in /home/minhtri95/public_html/load_food.php on line 75
+[24-Nov-2014 17:48:32 UTC] PHP Fatal error:  Class 'GMT_search' not found in /home/minhtri95/public_html/load_food.php on line 75
+[24-Nov-2014 17:49:05 UTC] PHP Fatal error:  Class 'GMT_search' not found in /home/minhtri95/public_html/load_food.php on line 75
+[13-Feb-2015 01:16:31 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home/minhtri95/public_html/load_food.php:21
+Stack trace:
+#0 /home/minhtri95/public_html/load_food.php(21): DateTimeZone->__construct('')
+#1 /home/minhtri95/public_html/load_food.php(94): get_timee('Canada', 'Mississauga')
+#2 {main}
+  thrown in /home/minhtri95/public_html/load_food.php on line 21
+[13-Feb-2015 01:16:55 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTimeZone::__construct(): Unknown or bad timezone ()' in /home/minhtri95/public_html/load_food.php:21
+Stack trace:
+#0 /home/minhtri95/public_html/load_food.php(21): DateTimeZone->__construct('')
+#1 /home/minhtri95/public_html/load_food.php(94): get_timee('Canada', 'Mississauga')
+#2 {main}
+  thrown in /home/minhtri95/public_html/load_food.php on line 21
