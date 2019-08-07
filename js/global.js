@@ -22,7 +22,7 @@ $(document).ready(function(){
 	});
 	
 	setTimeout(function(){
-		$('.top_bar, .social_icon, .top_logo, .address_bar, .Del_Pick_bar, .navi, .left_block, .right_block, .shopping_cart, .top_line, .bot_line, .left_line, .right_line').addClass('ani_speed');
+		$('.top_bar, .top_bar ul, .social_icon, .top_logo, .address_bar, .Del_Pick_bar, .navi, .left_block, .right_block, .shopping_cart, .top_line, .bot_line, .left_line, .right_line').addClass('ani_speed');
 	},200);
 
 	/*------------top menu------------*/
@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$('.top_menu').removeClass('active');
 		$(this).addClass('active');
 		$(this).parent('li').addClass('active');
-		scrollTo_($(this).attr('rel'), $(this).attr('po'));
+		scrollTo_($(this).attr('rel'), $(this).attr('po'),1000);
 	});
 	
 	//----------mobile action------------
@@ -44,7 +44,8 @@ $(document).ready(function(){
 	
 	/*-----------menu_item-------------*/
 	$('.menu_item').bind('tapone click mouseup touchend', function(){
-		$('#menu_list').fadeOut(300);
+		$('.menu_list').fadeOut(300);
+		$('.menu_title').trigger('click');
 		if(mobile_browser == true)
 			clearInterval(loop_menu_);
 		show_food_content($(this).attr('rel'));
@@ -58,13 +59,31 @@ $(document).ready(function(){
 		});
 	});
 
+	$('.menu_title').bind('click', function(){
+		var menu_title = $(this);
+		if($('.toggle_'+menu_title.attr('rel')).css('display') == 'block'){
+			$('.toggle_'+menu_title.attr('rel')).slideToggle(300);
+			return;
+		}
+			
+		$('.toggle_menu').each(function(i,e){
+			if($(this).css('display') == 'block'){
+				$(this).slideToggle(300);
+			}
+		});
+		scrollTo_('.menu_screen','top', 300);
+		$('.toggle_'+menu_title.attr('rel')).slideToggle(300);
+		// console.log(menu_title.position('top'))
+		
+	});
+
 	/*-----------bar click-------------*/
 	$('.order_btn').bind('tapone click mouseup touchend',function(){
 		$('#top_menu').trigger('tapone');
 	});
 
 	$('#shopping_cart_check_out').bind('tapone click mouseup touchend',function(){
-		scrollTo_('.order_screen','top');
+		scrollTo_('.order_screen','top',1000);
 	});
 	/*----------food menu----------*/
 	//-------mobile action-----------
@@ -87,23 +106,21 @@ $(document).ready(function(){
 		//stop_food_slide_show();
 		$('#menu_item_list li').removeClass('active');
 		$(this).addClass('active');
-		$('.menu_list_content').hide();
+		//$('.menu_list_content').hide();
 		$('#menu_item_list .left_block').removeClass('ani');
 		$('#menu_item_list .right_block').removeClass('ani');
 		show_food_content($(this).attr('rel'));
 		setTimeout(function(){
-			$('.menu_list_content').fadeIn(200,function(){
-				$('#menu_item_list .left_block').addClass('ani');
-				$('#menu_item_list .right_block').addClass('ani');
-				food_scroll = new IScroll('.menu_list_scroll',{
-					scrollbars: true,
-					mouseWheel: true,
-					interactiveScrollbars: true,
-					checkDOMChanges: true
-				});
-				$('#menu_item_list .left_block').bind('webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd',function(){
-					food_slide_show();
-				});
+			$('#menu_item_list .left_block').addClass('ani');
+			$('#menu_item_list .right_block').addClass('ani');
+			food_scroll = new IScroll('.menu_list_scroll',{
+				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				checkDOMChanges: true
+			});
+			$('#menu_item_list .left_block').bind('webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd',function(){
+				food_slide_show();
 			});
 		},300);
 	});
@@ -153,13 +170,13 @@ function top_logo_ani(){
 
 /*---------------------------top menu----------------------------*/
 
-function scrollTo_(ele, po){
-	//alert($(ele).offset().top);
+function scrollTo_(ele, po, transition){
+	
 	if(po == 'top')
 	{
 		$('body, html').animate({
 			scrollTop: $(ele).offset().top
-		},1000)
+		},transition)
 	}	
 		//$(document).scrollTop($(ele).offset().top,1000);
 		
@@ -167,7 +184,7 @@ function scrollTo_(ele, po){
 	{
 		$('body, html').animate({
 			scrollTop: $(ele).offset().top + $('.top_bar').outerHeight()
-		},1000)
+		},transition)
 		
 	}	
 };

@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$('.top_menu').removeClass('active');
 		$(this).addClass('active');
 		$(this).parent('li').addClass('active');
-		scrollTo_($(this).attr('rel'), $(this).attr('po'));
+		scrollTo_($(this).attr('rel'), $(this).attr('po'),1000);
 	});
 	
 	//----------mobile action------------
@@ -64,7 +64,7 @@ $(document).ready(function(){
 	});
 
 	$('#shopping_cart_check_out').bind('tapone click mouseup touchend',function(){
-		scrollTo_('.order_screen','top');
+		scrollTo_('.order_screen','top',1000);
 	});
 	/*----------food menu----------*/
 	//-------mobile action-----------

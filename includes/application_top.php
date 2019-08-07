@@ -66,7 +66,7 @@ if(USE_DATABASE){
   require(DIR_WS_INCLUDES . 'add_classes.php');
 
 // START TEMPLATE CAPTURING
-  require (DIR_WS_CLASSES . 'sts.php');
-  $sts = new sts();
+  //require (DIR_WS_CLASSES . 'sts.php');
+  //$sts = new sts();
 // END STS
 ?>

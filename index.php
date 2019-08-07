@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="google-site-verification" content=" v0_GZZh8xovyJiMB4IRgsMatfolff6scK422CshbbLs">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Noodlehouses.ca</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -17,6 +18,7 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="fontawesome.5.9/css/all.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 <link id="favicon" rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -107,7 +109,7 @@
                 <a class="fas fa-bars"></a>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10">
                 <div class="top_logo"></div>
                     <ul class="align_mid">
                         <li class="align_mid">
@@ -147,30 +149,34 @@
     <!--home screen-->
     <div class="home_screen _screen">
         <div class="cover">
-            <div class="home_bg">
-                <div class="home_text">
-                    <div class="text_1 Perpetua">&nbsp;</div>
-                    <div class="text_2 Palace_Script"></div>
-                    <div class="text_3">
-                        <span class="PALSCRI">Experience</span>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="home_text">
+                        <div class="text_3">
+                            <span class="PALSCRI">Experience</span>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <img class="home_bg" src="images/home_bg_1.jpg"/>
+                </div>
             </div>
+            
             <div id="address_bar">
-                <div class="address_bar">
-                    <div class="left_text align_mid">
+                <div class="row address_bar">
+                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs left_text align_mid">
                         <p>OUR<br>
                         <b>DELICIOUS<br>
                         FOOD</b> AT<br>
                         YOUR<br>
                         DOORSTEP</p>
                     </div>
-                    <div class="phone_numb align_mid white">
+                    <div class="col-lg-5 col-md-5 col-sm-6 hidden-xs phone_numb align_mid white">
                         <p><span class="Hel_Light">Call us</span><br>
                         <b class="Hel_bold">(604)-945-9597</b></p>
                         <div class="OR Hel_Light align_mid">Or</div>
                     </div>
-                    <div class="Order align_mid">
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 Order align_mid">
                         <a href="javascript:void(0)" class="order_btn align_mid">Order now</a>
                     </div>
                 </div>    
@@ -181,97 +187,105 @@
     <div class="menu_screen _screen">
         <div class="cover">
             <!--menu-list-->
-            <div  id="menu_list">
-                <div class="top_title"><b>EXPERIENCE THE BEST FOOD</b></div>
+            <div  id="menu_list" class="row">
+                <div class="top_title col-lg-12 col-md-12 col-sm-12 col-xs-12"><b>EXPERIENCE THE BEST FOOD</b></div>
                 <?php 
-                    
-                    if(isMobile()){
-                        $count = 0;
-                        echo '<div class="menu_list align_mid mobile">';
-                        echo '<div class="control_btn next"></div>';
-                        echo '<div class="control_btn back"></div>';
-                        $menu = tep_db_query('select * from menu where menu.STATUS = 1 ORDER BY RATE');
-                        //echo $GLOBALS['menu'];
-                        while ( $element = tep_db_fetch_array($menu))
-                        {
-                            if($count > 1)
-                                echo '<div class="menu_item hide" rel="'.$element["NAME"].'">';
-                            else
-                                echo '<div class="menu_item show" rel="'.$element["NAME"].'">';
-                            echo '<div class="menu_name Hel_Con_Bold">' . $element["NAME"] . '</div>';
-                            echo '<img src="images/menu/' . str_replace(' ','',$element["NAME"]) . '_menu.png">';
-                            echo '</div>';
-                            $count++;
-                        }
-                        echo '<div class="menu_list_icon_bar align_mid"></div>';
+                    $count = 0;
+                    $menu = tep_db_query('select * from menu where menu.STATUS = 1 ORDER BY RATE');
+                    echo '<div class="menu_list align_mid desktop col-lg-12 col-md-12 col-sm-12 hidden-xs">';
+                    while ( $element = tep_db_fetch_array($menu))
+                    {
+                        echo '<div class="menu_item" rel="'.$element["NAME"].'">';
+                        echo '<div class="menu_name Hel_Con_Bold">' . $element["NAME"] . '</div>';
+                        echo '<img src="images/menu/' . str_replace(' ','',$element["NAME"]) . '_menu.png">';
                         echo '</div>';
-                        echo '<script type="text/javascript" src="js/mobile_main.js"></script>';
+                        if( $count == 5)
+                            echo '</div><div class="menu_list align_mid desktop  col-lg-12 col-md-12 col-sm-12 hidden-xs">';
+                        $count++;
                     }
-                    else {
-                        $count = 0;
-                        echo '<div class="menu_list align_mid desktop">';
-                        $menu = tep_db_query('select * from menu where menu.STATUS = 1 ORDER BY RATE');
-                        //echo $GLOBALS['menu'];
-                        while ( $element = tep_db_fetch_array($menu))
-                        {
-                            echo '<div class="menu_item" rel="'.$element["NAME"].'">';
-                            echo '<div class="menu_name Hel_Con_Bold">' . $element["NAME"] . '</div>';
-                            echo '<img src="images/menu/' . str_replace(' ','',$element["NAME"]) . '_menu.png">';
-                            echo '</div>';
-                            if( $count == 5)
-                                echo '</div><div class="menu_list align_mid desktop">';
-                            $count++;
-                        }
-                        echo '</div>';
-                    }
-                    
+                    echo '</div>';
                 ?>
-            </div>
-            <!---->
-            <div id="menu_item_list">
-                <div class="navi">
-                    <ul>
-                    <?php
-                        $menu = tep_db_query('select * from menu where menu.STATUS = 1 ORDER BY RATE');
-                        while ( $ele = tep_db_fetch_array($menu))
+                <?php
+                    $menu = tep_db_query('select * from menu where menu.STATUS = 1 ORDER BY RATE'); 
+                    echo '<div class="hidden-lg hidden-md hidden-sm col-xs-12 menu_block">';
+                        while ( $item = tep_db_fetch_array($menu))
                         {
-                            echo '<li rel="'.$ele["NAME"].'"><a href="javascript:void(0)" class="align_mid">'.$ele["NAME"].'</a></li>';
+                            echo '<div class="menu_title" rel="'.$item["ID"].'">'.$item["NAME"].'</div>';
+                            $menu_list = tep_db_query("select foods.KEY, foods.NAME, foods.PRICE, foods.MENU, foods.ID, foods.DESCRIPTION from foods, menu where foods.MENU = menu.ID and menu.NAME = '" . $item["NAME"] . "' ORDER BY foods.ID");
+                            echo '<div class="toggle_menu toggle_'.$item["ID"].'">';
+                            while( $item_list = tep_db_fetch_array($menu_list)){
+                                $key_ = explode('_',$item_list['KEY']);
+
+                                if(!$key_[1])
+                                    $key = $key_[0];
+                                else
+                                    $key = $key_[1].')';
+                                
+
+                                if($item_list['PRICE'] == '0.00')
+                                    $item_list['PRICE'] = '';
+
+                                echo '<div class="menuItem">';
+                                echo '<div class="menuItemName">'. $key . '. '. $item_list["NAME"] . '<br>' . $item_list["DESCRIPTION"] . '</div>';
+                                echo '<div class="menuItemPrice">'.$item_list["PRICE"].'</div>';
+                                echo '<div class="menuItemButton">';
+                                    if($item_list['PRICE'] !== '')
+                                        echo '<div class="btn_add" onclick="add_to_bill(\''.$item_list["ID"].'\',\''.$item_list["KEY"].$item_list["NAME"].'\',\''.$item_list["PRICE"].'\')" onmousedown="$(this).addClass(\'actived\')" onmouseup="$(this).removeClass(\'actived\')"></div>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                            echo '</div>';
                         }
-                    ?>
-                    </ul>
-                </div>
-                <div class="menu_list_content" id="">
-                    <div class="left_block">
-                        <div class="menu_name Hel_Con_Bold green">Thai Dishes</div>
-                        <div class="menu_img">
-                            
+                    echo '</div>';
+                ?>
+                <div id="menu_item_list" class=" col-lg-12 col-md-12 col-sm-12 hidden-xs">
+                    <div class="menu_list_content" id="">
+                        <div class="navi col-lg-12 col-md-12 col-sm-4 col-xs-4">
+                            <ul>
+                            <?php
+                                $menu = tep_db_query('select * from menu where menu.STATUS = 1 ORDER BY RATE');
+                                while ( $ele = tep_db_fetch_array($menu))
+                                {
+                                    echo '<li rel="'.$ele["NAME"].'"><a href="javascript:void(0)" class="align_mid">'.$ele["NAME"].'</a></li>';
+                                }
+                            ?>
+                            </ul>
+                        </div>    
+                        <div class="left_block col-lg-4 col-md-4 hidden-sm hidden-xs">
+                            <div class="menu_name Hel_Con_Bold green">Thai Dishes</div>
+                            <div class="menu_img">
+                                
+                            </div>
+                        </div>
+                        <div class="right_block col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <!-- <div class="menu_list_scroll">
+                                <div id="scroller">
+                                </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="right_block">
-                        <!-- <div class="menu_list_scroll">
-                            <div id="scroller">
-                            </div>
-                        </div> -->
-                    </div>
                 </div>
-                <div class="shopping_cart">
-                    <a class="align_mid checkout" id="shopping_cart_check_out" href="javascript:void(0)" onclick=""><b>Check out</b></a>
-                    <div class="item_count align_mid">Item(s) <b>0</b></div>
-                </div>
+            </div>
+            <!---->
+            
+            <div class="shopping_cart">
+                <a class="align_mid checkout" id="shopping_cart_check_out" href="javascript:void(0)" onclick=""><b>Check out</b></a>
+                <div class="item_count align_mid">Item(s) <b>0</b></div>
             </div>
             <div id="Del_Pick_bar">
                 <div class="Del_Pick_bar">
-                    <div class="Del_Pick_block align_mid">
-                        <!-- <a href="javascript:void(0)" class="Del_icon" onclick="messagebox('coming soon...');"></a>
-                        <a href="javascript:void(0)" class="Pick_icon"></a> -->
-                        <p></p><br /> Most popular.<br /><span>(Our food may contain or contact with allergens. <br />Please let us know if you have any food allergies.)</span>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs Del_Pick_block align_mid">
+                            <p></p> Most popular.<br /><span>(Our food may contain or contact with allergens. <br />Please let us know if you have any food allergies.)</span>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 cold-xs-12 address_block align_mid">
+                            <?php 
+                                echo $address . '<br><br>';
+                                echo $open_time; 
+                            ?>
+                        </div>
                     </div>
-                    <div class="address_block align_mid">
-                        <?php 
-							echo $address . '<br><br>';
-							echo $open_time; 
-						?>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -280,90 +294,95 @@
     <div class="order_screen _screen">
         <div class="cover">
             <div class="order_content">
-                <div class="left_content">
-                    <div class="title red Hel_Con_Bold">Your Information</div>
-                    <div class="title_bar active" status='pickup'>
-                        <a href="javascript:void(0)">Pick up</a>
-                        <div class="pick_info">
-                            <div class="radio_button" id='30_minutes'><span></span><a href='javascript:void(0)'>Pick up after 30 minutes from now</a></div>
-                            <div class="radio_button" id='pickup_time'><span></span><a href='javascript:void(0)'>Pick up today at this time</a></div>
-                            <div class="pick_time">
-                                <span>Hours</span>
-                                <select class='hours' id="pick_hour">
-                                    <option>09</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                    <option>17</option>
-                                    <option>18</option>
-                                    <option>19</option>
-                                    <option>20</option>
-                                    <option>21</option>
-                                </select>
-                                <span>Minutes</span>
-                                <select class='minute' id="pick_minute">
-                                    <option>00</option>
-                                    <option>10</option>
-                                    <option>20</option>
-                                    <option>30</option>
-                                    <option>40</option>
-                                    <option>50</option>
-                                </select>
-                            </div><br /><br />
-                            <input class="text_field Hel_Thin" id="order_name" type="text" value="Name..." onClick=" if(document.getElementById('order_name').value == 'Name...') document.getElementById('order_name').value = ''; " onBlur=" if(document.getElementById('order_name').value == '') document.getElementById('order_name').value = 'Name...'; " >
-                            <input class="text_field Hel_Thin" id="order_phone_number" type="text" value="Phone..." onClick=" if(document.getElementById('order_phone_number').value == 'Phone...') document.getElementById('order_phone_number').value = ''; " onBlur=" if(document.getElementById('order_phone_number').value == '') document.getElementById('order_phone_number').value = 'Phone...'; ">
-                            <input class="text_field Hel_Thin deactive" id="order_address" type="text" value="Address..." onClick=" if(document.getElementById('order_address').value == 'Address...') document.getElementById('order_address').value = ''; " onBlur=" if(document.getElementById('order_address').value == '') document.getElementById('order_address').value = 'Address...'; ">
-                            <textarea class="text_field Hel_Thin" id="order_note" type="text" rows="5" onClick=" if(document.getElementById('order_note').value == 'Note...') document.getElementById('order_note').value = ''; " onBlur=" if(document.getElementById('order_note').value == '') document.getElementById('order_note').value = 'Note...'; ">Note...</textarea>
-                        </div>
-                    </div>
-                    <div class="title_bar" status='delivery' onclick="messagebox('coming soon...');">
-                        <a href="javascript:void(0)">Delivery</a>
-                        <div class="delivery_info">
-                            
-                        </div>
-                    </div>
-                    <a href="javascript:void(0)" class="btn_submit Hel_Thin" id="order_submit">Submit</a>
-                </div>
-                <div class="right_content">
-                    <div class="receipt_content">
-                        <div class="title">
-                            NOODLEHOUSES.COM<br>
-                            <span>
-                                <?php 
-									echo $address . '<br><br>';
-									echo $open_time; 
-								?>
-                            </span>
-                        </div>
-                        <div class="receipt_scroller">
-                            <div id="scroller">
-                            <table cellpadding="0" cellspacing="0" class="bill_list">
-                                
-                            </table>
+                <div class="row">
+                    <div class="left_content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="title red Hel_Con_Bold">Your Information</div>
+                        <div class="title_bar active" status='pickup'>
+                            <a href="javascript:void(0)">Pick up</a>
+                            <div class="pick_info">
+                                <div class="radio_button" id='30_minutes'><span></span><a href='javascript:void(0)'>Pick up after 30 minutes from now</a></div>
+                                <div class="radio_button" id='pickup_time'><span></span><a href='javascript:void(0)'>Pick up today at this time</a></div>
+                                <div class="pick_time">
+                                    <span>Hours</span>
+                                    <select class='hours' id="pick_hour">
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                    </select>
+                                    <span>Minutes</span>
+                                    <select class='minute' id="pick_minute">
+                                        <option>00</option>
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>40</option>
+                                        <option>50</option>
+                                    </select>
+                                </div><br /><br />
+                                <input class="text_field Hel_Thin" id="order_name" type="text" value="Name..." onClick=" if(document.getElementById('order_name').value == 'Name...') document.getElementById('order_name').value = ''; " onBlur=" if(document.getElementById('order_name').value == '') document.getElementById('order_name').value = 'Name...'; " >
+                                <input class="text_field Hel_Thin" id="order_phone_number" type="text" value="Phone..." onClick=" if(document.getElementById('order_phone_number').value == 'Phone...') document.getElementById('order_phone_number').value = ''; " onBlur=" if(document.getElementById('order_phone_number').value == '') document.getElementById('order_phone_number').value = 'Phone...'; ">
+                                <input class="text_field Hel_Thin deactive" id="order_address" type="text" value="Address..." onClick=" if(document.getElementById('order_address').value == 'Address...') document.getElementById('order_address').value = ''; " onBlur=" if(document.getElementById('order_address').value == '') document.getElementById('order_address').value = 'Address...'; ">
+                                <textarea class="text_field Hel_Thin" id="order_note" type="text" rows="5" onClick=" if(document.getElementById('order_note').value == 'Note...') document.getElementById('order_note').value = ''; " onBlur=" if(document.getElementById('order_note').value == '') document.getElementById('order_note').value = 'Note...'; ">Note...</textarea>
                             </div>
                         </div>
-                        <table cellspacing="0" cellspacing="0">
-                            <tr class="tax_ship">
-                                <td>GST</td>
-                                <td><span id="bill_tax">5</span>%</td>
-                            </tr>
-                            <!-- <tr class="tax_ship">
-                                <td>Ship</td>
-                                <td>123</td>
-                            </tr> -->
-                            <tr class="total">
-                                <td>Total</td>
-                                <td><span id="bill_cost">0</span>$</td>
-                            </tr>
-                        </table>
+                        <div class="title_bar" status='delivery' onclick="messagebox('coming soon...');">
+                            <a href="javascript:void(0)">Delivery</a>
+                            <div class="delivery_info">
+                                
+                            </div>
+                        </div>
                     </div>
+                    <div class="right_content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="receipt_content">
+                            <div class="title">
+                                NOODLEHOUSES.COM<br>
+                                <span>
+                                    <?php 
+                                        echo $address . '<br><br>';
+                                        echo $open_time; 
+                                    ?>
+                                </span>
+                            </div>
+                            <div class="receipt_scroller">
+                                <div id="scroller">
+                                <table cellpadding="0" cellspacing="0" class="bill_list">
+                                    
+                                </table>
+                                </div>
+                            </div>
+                            <table cellspacing="0" cellspacing="0">
+                                <tr class="tax_ship">
+                                    <td>GST</td>
+                                    <td><span id="bill_tax">5</span>%</td>
+                                </tr>
+                                <!-- <tr class="tax_ship">
+                                    <td>Ship</td>
+                                    <td>123</td>
+                                </tr> -->
+                                <tr class="total">
+                                    <td>Total</td>
+                                    <td><span id="bill_cost">0</span>$</td>
+                                </tr>
+                            </table>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 align_mid"><a href="javascript:void(0)" class="btn_submit Hel_Thin" id="order_submit">Submit</a></div>
                 </div>
             </div>
+            
         </div>
     </div>
     <!--contact screen-->
@@ -374,22 +393,29 @@
                 <b class="red Hel_Con_Bold">CONTACT US</b>
             </div>
             <div class="mid_text align_mid">We love to hear form you</div>
-            <div class="contact_field">
-                <input type="text" class="text_field Hel_Thin" id="contact_name" value="Your name..." 
-                onClick=" if(document.getElementById('contact_name').value == 'Your name...') document.getElementById('contact_name').value = ''; " 
-                onBlur=" if(document.getElementById('contact_name').value == '') document.getElementById('contact_name').value = 'Your name...'; ">
-                <textarea class="text_field Hel_Thin" id="contact_note" type="text" rows="7" 
-                onClick=" if(document.getElementById('contact_note').value == 'Your message...') document.getElementById('contact_note').value = ''; " 
-                onBlur=" if(document.getElementById('contact_note').value == '') document.getElementById('contact_note').value = 'Your message...'; ">Your message...</textarea>
-                <input type="text" class="text_field Hel_Thin" id="contact_email" value="Your email..."
-                onClick=" if(document.getElementById('contact_email').value == 'Your email...') document.getElementById('contact_email').value = ''; " 
-                onBlur=" if(document.getElementById('contact_email').value == '') document.getElementById('contact_email').value = 'Your email...'; ">
-                <input type="text" class="text_field Hel_Thin" id="contact_phone" value="Your phone number..."
-                onClick=" if(document.getElementById('contact_phone').value == 'Your phone number...') document.getElementById('contact_phone').value = ''; " 
-                onBlur=" if(document.getElementById('contact_phone').value == '') document.getElementById('contact_phone').value = 'Your phone number...'; ">
+            <div class="contact_field row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left_field">
+                    <input type="text" class="text_field Hel_Thin" id="contact_name" value="Your name..." 
+                    onClick=" if(document.getElementById('contact_name').value == 'Your name...') document.getElementById('contact_name').value = ''; " 
+                    onBlur=" if(document.getElementById('contact_name').value == '') document.getElementById('contact_name').value = 'Your name...'; ">
+                    <input type="text" class="text_field Hel_Thin" id="contact_phone" value="Your phone number..."
+                    onClick=" if(document.getElementById('contact_phone').value == 'Your phone number...') document.getElementById('contact_phone').value = ''; " 
+                    onBlur=" if(document.getElementById('contact_phone').value == '') document.getElementById('contact_phone').value = 'Your phone number...'; ">
+                    <input type="text" class="text_field Hel_Thin" id="contact_email" value="Your email..."
+                    onClick=" if(document.getElementById('contact_email').value == 'Your email...') document.getElementById('contact_email').value = ''; " 
+                    onBlur=" if(document.getElementById('contact_email').value == '') document.getElementById('contact_email').value = 'Your email...'; ">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    
+                    <textarea class="text_field Hel_Thin" id="contact_note" type="text" rows="7" 
+                    onClick=" if(document.getElementById('contact_note').value == 'Your message...') document.getElementById('contact_note').value = ''; " 
+                    onBlur=" if(document.getElementById('contact_note').value == '') document.getElementById('contact_note').value = 'Your message...'; ">Your message...</textarea>
+                </div>
             </div>
-            <div class="align_mid">
-                <a href="javascript:void(0)" class="btn_submit Hel_Thin" id="contact_submit">Submit</a>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 align_mid">
+                    <a href="javascript:void(0)" class="btn_submit Hel_Thin" id="contact_submit">Submit</a>
+                </div>
             </div>
         </div>
         <div id="map">
@@ -400,13 +426,15 @@
     <!--footer-->
     <div class="footer">
         <div class="cover">
-            <div class="left_info">
-                (604)-945-9597<br>
-                1466 Prairie Avenue, Port Coquitlam, BC V3B 5M8
-            </div>
-            <div class="right_info">
-                &copy; Copyright 2010 NooldeHouse.ca. All right reserved<br>
-                Design by NoodleHouses.ca
+            <div class="row">
+                <div class="left_info col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    (604)-945-9597<br>
+                    1466 Prairie Avenue, Port Coquitlam, BC V3B 5M8
+                </div>
+                <div class="right_info col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    &copy; Copyright 2010 NooldeHouse.ca. All right reserved<br>
+                    Design by NoodleHouses.ca
+                </div>
             </div>
         </div>
     </div>

@@ -74,7 +74,7 @@ $(document).ready(function(){
 			{
 				messagebox('Your cart have no food!<br>Please order first!');
 				$('.message_box a').bind('tapone click mouseup touchend',function(){
-					scrollTo_('.menu_screen','bottom');
+					scrollTo_('.menu_screen','bottom',1000);
 					return;
 				});
 			}
@@ -182,7 +182,7 @@ function show_bill_value(){
 			//total
 			string +='<td>'+total_item+'</td>';
 			
-			string +='<td class="align_mid remove_feild">';
+			string +='<td class="remove_feild">';
 			string +='<div onclick="add_to_bill('+bill_food_list[i][0]+')" class="btn_add" onmousedown="$(this).addClass('+"'"+'actived'+"'"+')" onmouseup="$(this).removeClass('+"'"+'actived'+"'"+')"></div><br>';
 			string +='<div onclick="remove_from_bill('+bill_food_list[i][0]+')" class="btn_remove" onmousedown="$(this).addClass('+"'"+'actived'+"'"+')" onmouseup="$(this).removeClass('+"'"+'actived'+"'"+')"></div>';
 			string +='</td>';

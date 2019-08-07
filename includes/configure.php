@@ -4,8 +4,8 @@
   define('DIR_WS_LANGUAGES', 'languages/');
   define('DIR_WS_TEMPLATES', 'templates/');
   define('DIR_WS_LANGUAGES', 'languages/');
-  define('DIR_WS_FUNCTIONS', DIR_WS_INCLUDES . 'functions/');
-  define('DIR_WS_CLASSES', DIR_WS_INCLUDES . 'classes/');  
+  define('DIR_WS_FUNCTIONS', 'functions/');
+  define('DIR_WS_CLASSES', 'classes/');  
   
   // Edit below this line
   define('HTTP_SERVER', 'localhost');
