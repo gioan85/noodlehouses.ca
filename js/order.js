@@ -41,20 +41,22 @@ $(document).ready(function(){
 	
 	
 	$('.pick_info').find('.radio_button').bind('tapone click mouseup touchend',function(){
+		if( hour >= 24)
+		{
+			messagebox('Our bussiness going to close.<br>You can order for tomorrow!');
+			return false;
+		}
+		console.log($(this).attr('id'));
+		if( hour <=11 && $(this).attr('id') == '30_minutes')
+		{
+			messagebox('Our bussiness will open at 11am.<br>You can order after!');
+		}
 		if($(this).hasClass('active'))
 			return false;
 		else
 		{
 			$('.pick_info').find('.radio_button').removeClass('active');
-			if( hour >= 24)
-			{
-				messagebox('Our bussiness going to close.<br>You can order for tomorrow!');
-				return false;
-			}
-			else
-			{
-				$(this).addClass('active');
-			}	
+			$(this).addClass('active');
 		}
 	});
 

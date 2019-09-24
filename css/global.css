@@ -476,9 +476,9 @@ a{ text-decoration: none; }
 	position: absolute;
 	left:0px;
 	bottom:110%;
-	font-size: 1.6vw;
+	font-size: 18px;
 	padding: 0 20px;
-	line-height: 1.6vw;
+	line-height: 20px;
 }
 
 .menu_screen .menu_list .menu_item:hover,
@@ -1279,31 +1279,32 @@ a.btn_submit.active{
 
 .message_bg .message_box{
 	background:#fff;
-	width:40%; height: 30%;
-	font-size:2em; line-height: 1em; text-align: center;
+	width:90%;
+	max-width: 400px;
+	height: 30%;
+	font-size: 1.8em;
+	line-height: 1.2em;
+	text-align: center;
 	border-radius: 20px;
 	border:1px solid #db4f44;
 	position: relative;
 }
 
 .message_bg .message_box .message_close{
-	font-size: 1.4em; line-height: -1em;
-	padding:0.1em 0.3em 0.2em 0.3em;
-	text-decoration: none;
+	font-size: 30px;
+	line-height: 30px;
 	background: #fff;
 	border:1px solid #db4f44;
 	border-radius: 3em;
-	text-align: center;
+	color: #db4f44;
 	position: absolute;
-	right:-0.5em;
-	top:-0.5em;
-	-webkit-transform:rotate(90deg);
-	-ms-transform:rotate(90deg);
-	-o-transform:rotate(90deg);
-	-moz-transform:rotate(90deg);
-	transform:rotate(90deg);
+	right: -15px;
+	top: -15px;
 	box-shadow: 0px 0px 3px 3px #ddd;
+	width: 40px;
+	height: 40px;
 }
 .message_bg .message_box .message_close:hover{
 	box-shadow: 0px 0px 3px 3px #999;
+	text-decoration: none;
 }

@@ -17,9 +17,9 @@ $(document).ready(function(){
 
 	$(window).on('scroll',top_logo_ani);
 	
-	$(window).on('load',function(){
-		$('#top_home').trigger('tapone');
-	});
+	// $(window).on('load',function(){
+	// 	$('#top_home').trigger('tapone');
+	// });
 	
 	setTimeout(function(){
 		$('.top_bar, .top_bar ul, .social_icon, .top_logo, .address_bar, .Del_Pick_bar, .navi, .left_block, .right_block, .shopping_cart, .top_line, .bot_line, .left_line, .right_line').addClass('ani_speed');
@@ -197,7 +197,7 @@ function messagebox(mess){
 	if(mess == '' || mess === undefined || mess === null)
 		return;
 	var content = "<div class='message_bg align_mid' style='top:"+$(document).scrollTop()+"px'>";
-	content +="<div class='message_box red align_mid'><a href='javascript:void(0)' onclick='message_close();' class='message_close align_mid Hel_Thin red'>x</a>"+mess+"</div></div>";
+	content +="<div class='message_box red align_mid'><a href='javascript:void(0)' onclick='message_close();' class='message_close align_mid'>x</a>"+mess+"</div></div>";
 	if($('body').find('.message_bg').length > 0)
 		return;
 	$('body').append(content).attr('style','overflow:hidden');
