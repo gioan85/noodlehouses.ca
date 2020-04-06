@@ -92,7 +92,7 @@ body{ font-size:14px; line-height:18px;}
 }
 
 #menu_item_list .navi li a{
-	padding: 0px 1vw;
+	padding: 0px 10px;
 }
 
 #address_bar,
@@ -407,28 +407,69 @@ and (max-device-width: 768px) {
 
 .event{
 	width:100%;
-	position:fixed; left:0; bottom:0;
+	position:fixed;
+	left:0;
+	bottom:0;
 	z-index:200;
 }
+
+.event.show{ height: 100%;}
+
 .event .cover{
-	position:relative; bottom:0px;
+	position:relative;
+	bottom:0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0;
 }
+
+.event.show .cover{height: 100%;}
+
 .Special_time{
-	background:url(../images/Christmas_time.png) no-repeat;
-	background-size: 100% auto;
-	width:73%; height:569px; min-width:400px;
-	position:absolute; bottom:0px; left:16%;
-	z-index:200; opacity:0; visibility:hidden;
+	background: #83b370;
+	background-size: auto 100%;
+	width:73%;
+	height: auto;
+	min-width: 330px;
+	z-index:200;
+	opacity:0;
+	visibility:hidden;
 	-webkit-transform:translate3d(0px, -50px, 0px);
 	-moz-transform:translate3d(0px, -50px, 0px);
 	-o-transform:translate3d(0px, -50px, 0px);
 	-ms-transform:translate3d(0px, -50px, 0px);
 	transform:translate3d(0px, -50px, 0px);
+	border-radius: 30px;
+	margin: 0 auto;
+	/* position: relative; */
+	/* top: 38%; */
 }
 .Special_time .Special_close{
-	width:11%; height:13%;
-	position:absolute; top:0; right:0;
+	width: 50px;
+	height: 50px;
+	position:absolute;
+	top:0;
+	right:0;
+	background: #f55554;
+	-webkit-border-radius: 0 20px 0 20px;
 }
+.Special_time .Special_close::before,
+.Special_time .Special_close::after{
+	content:'';
+	display: block;
+	width:50%;
+	height: 4px;
+	background:#fff;
+	border-radius: 4px;
+	position: absolute;
+	left:25%;
+	top: 47%;
+}
+
+.Special_time .Special_close::before{ -webkit-transform:rotate(45deg)}
+.Special_time .Special_close::after{ -webkit-transform:rotate(-45deg)}
+
 .Special_time.speed{
 	-webkit-transition:0.5s ease all;
 	-moz-transition:0.5s ease all;
@@ -445,21 +486,93 @@ and (max-device-width: 768px) {
 	opacity:1; visibility:visible;
 }
 .Special_icon{
-	background:url(../images/Christmas_icon.png) no-repeat 0 -124px;
-	width:84px; height:100px;
-	position:absolute; bottom:20px; left:20px;
+	background:url(../images/notification_icon.png) no-repeat 0 -124px;
+	width:84px;
+	height:100px;
+	position:absolute;
+	bottom:20px;
+	left: 0;
 	display:none;
 }
 .Special_icon::before{
-	background:url(../images/Christmas_icon.png) no-repeat 0px -11px;
+	background:url(../images/notification_icon.png) no-repeat 0px -11px;
 	content:''; display:inline-block;
 	width:100%; height:100%;
 	position:absolute; left:0; top:0;
 	-webkit-animation: event_shining 1s infinite;
 }
 
+.Special_content{
+	width: 90%;
+	height: auto;
+	align-items: center;
+	font-size: 1.5em;
+	color: #fff;
+	line-height: 1.2em;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 30px 0;
+	margin: 0 auto;
+}
+
+.Special_content span.red{color:#ff0000; text-shadow:0px 2px 1px rgba(255,255,255,0.3); font-weight:700}
+.Special_content p{margin:0;width: 100%;}
+
+.Special_header {
+    display: block;
+    width: 100%;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Special_footer{
+	font-size: 0.8em;
+	line-height: 1em;
+	margin-top:20px;
+	width: 100%;
+} 
+
 @-webkit-keyframes event_shining {
   0%   { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity:0;}
+}
+
+@media (max-width: 500px){
+	.Special_time{
+		background: #83b370;}
+	.Special_content{font-size: 14px;}
+	.Special_time{ border-radius: 20px;}
+
+	.Special_icon{
+		width: 42px;
+		height: 50px;
+		background-position: 0 -62px;
+		background-size: 100% auto;
+	}
+	.Special_icon::before{
+		background-size: 100% auto;
+		background-position: 0 -7px;
+	}
+	
+	.toggle_menu .toggle_menu_wrapper{
+		width:calc(100% - 40px);
+		height:calc(100% - 40px);
+		margin: 20px;
+	}
+	.toggle_menu .toggle_menu_wrapper .toggle_menu_cover{
+		width: calc(100% - 20px);
+		height: calc(100% - 40px);
+		top: 20px;
+		left: 10px;
+	}
+
+	.toggle_menu .toggle_menu_wrapper .toggle_menu_cover .menuItem{
+		padding: 5px 10px;
+	}
 }

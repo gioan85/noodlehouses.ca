@@ -3,6 +3,7 @@
 <head>
 <meta name="google-site-verification" content=" v0_GZZh8xovyJiMB4IRgsMatfolff6scK422CshbbLs">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Noodlehouses.ca</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -78,6 +79,7 @@
     <img src="images/order_bg.jpg" width="1607" height="1004" />
     <?php
 		$address = '1466 Prairie Avenue, Port Coquitlam, BC V3B 5M8';
+		$phone_number = '(604)-945-9597';
 		$open_time  = 'MONDAY-THURSDAY 11AM-9PM<br>';
 		$open_time .= 'FRIDAY-SATURDAY 11AM-10PM<br>';
 		$open_time .= 'SUNDAY 12AM-9PM';
@@ -212,7 +214,12 @@
                         {
                             echo '<div class="menu_title" rel="'.$item["ID"].'">'.$item["NAME"].'</div>';
                             $menu_list = tep_db_query("select foods.KEY, foods.NAME, foods.PRICE, foods.MENU, foods.ID, foods.DESCRIPTION from foods, menu where foods.MENU = menu.ID and menu.NAME = '" . $item["NAME"] . "' ORDER BY foods.ID");
-                            echo '<div class="toggle_menu toggle_'.$item["ID"].'">';
+                            echo '<div class="toggle_menu ani_speed toggle_'.$item["ID"].'">';
+                            echo '<div class="toggle_menu_wrapper">';
+                            echo '<div class="toggle_menu_close" data-toggle_menu="toggle_'.$item["ID"].'"></div>';
+                            echo '<div class="toggle_menu_cover">';
+                            echo '<div class="toggle_menu_scroller">';
+                            
                             while( $item_list = tep_db_fetch_array($menu_list)){
                                 $key_ = explode('_',$item_list['KEY']);
 
@@ -227,13 +234,16 @@
 
                                 echo '<div class="menuItem">';
                                 echo '<div class="menuItemName">'. $key . '. '. $item_list["NAME"] . '<br>' . $item_list["DESCRIPTION"] . '</div>';
-                                echo '<div class="menuItemPrice">'.$item_list["PRICE"].'</div>';
+                                echo '<div class="menuItemPrice">'.$item_list["PRICE"] .'</div>';
                                 echo '<div class="menuItemButton">';
                                     if($item_list['PRICE'] !== '')
                                         echo '<div class="btn_add" onclick="add_to_bill(\''.$item_list["ID"].'\',\''.$item_list["KEY"].$item_list["NAME"].'\',\''.$item_list["PRICE"].'\')" onmousedown="$(this).addClass(\'actived\')" onmouseup="$(this).removeClass(\'actived\')"></div>';
                                 echo '</div>';
                                 echo '</div>';
                             }
+                            echo '</div>';
+                            echo '</div>';
+                            echo '</div>';
                             echo '</div>';
                         }
                     echo '</div>';
@@ -280,7 +290,8 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 cold-xs-12 address_block align_mid">
                             <?php 
-                                echo $address . '<br><br>';
+                                echo $address . '<br>';
+								echo $phone_number . '<br>';
                                 echo $open_time; 
                             ?>
                         </div>
@@ -345,11 +356,12 @@
                     <div class="right_content col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="receipt_content">
                             <div class="title">
-                                NOODLEHOUSES.COM<br>
+                                NOODLEHOUSES.CA<br>
                                 <span>
                                     <?php 
-                                        echo $address . '<br><br>';
-                                        echo $open_time; 
+                                        echo $address . '<br>';
+										echo $phone_number . '<br>';
+										echo $open_time; 
                                     ?>
                                 </span>
                             </div>
@@ -439,14 +451,24 @@
         </div>
     </div>
     <!-- event -->
-    <div class="event">
+    <!-- <div class="event show">
         <div class="cover">
             <div class="Special_time speed">
+                <div class="Special_content">
+                    <div class="Special_header">Discount time</div>
+                    <p>
+                        10% off orders over 20$<br>
+                        15% off  orders over 30$
+                    </p>
+                    <div class="Special_footer">
+                        Thank you
+                    </div>                
+                </div>
                 <div class="Special_close"></div>
             </div>
-            <!-- <div class="Special_icon"></div> -->
+            <div class="Special_icon"></div>
         </div>
-    </div>	
+    </div>	 -->
 </body>
 
 

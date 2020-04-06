@@ -65,17 +65,29 @@ $(document).ready(function(){
 			$('.toggle_'+menu_title.attr('rel')).slideToggle(300);
 			return;
 		}
-			
-		$('.toggle_menu').each(function(i,e){
-			if($(this).css('display') == 'block'){
-				$(this).slideToggle(300);
-			}
-		});
-		scrollTo_('.menu_screen','top', 300);
-		$('.toggle_'+menu_title.attr('rel')).slideToggle(300);
-		// console.log(menu_title.position('top'))
+		if($('.menu_block').css('display') == 'block')
+			$('body').attr('style','overflow:hidden');
+		$('.toggle_'+menu_title.attr('rel')).toggleClass('show');
 		
 	});
+	setTimeout(function(){
+		$('.toggle_menu_cover').each(function(e,i){
+			if($(this).height() < $(this).find('.toggle_menu_scroller').height()){
+				new IScroll($(this)[0],{
+					scrollbars: true,
+					mouseWheel: true,
+					interactiveScrollbars: true,
+					checkDOMChanges: true
+				});
+			}
+		})
+	},500);
+	
+
+	$('.toggle_menu_close').bind('click', function(){
+		$('.'+$(this).data('toggle_menu')).toggleClass('show');
+		$('body').attr('style','');
+	})
 
 	/*-----------bar click-------------*/
 	$('.order_btn').bind('tapone click mouseup touchend',function(){
@@ -83,6 +95,8 @@ $(document).ready(function(){
 	});
 
 	$('#shopping_cart_check_out').bind('tapone click mouseup touchend',function(){
+		if($('.toggle_menu.show').length > 0)
+			$('.toggle_menu.show').find('.toggle_menu_close').trigger('click')
 		scrollTo_('.order_screen','top',1000);
 	});
 	/*----------food menu----------*/
@@ -136,7 +150,7 @@ $(document).ready(function(){
 
 	//click icon choose food on slide show
 	
-	//event_();
+	// event_();
 });
 
 /*-------------------------------------------new----------------------------------------------*/
@@ -414,17 +428,19 @@ function validate_contact(){
 
 function event_(){
 	setTimeout(function(){
-		$('.Special_time').addClass('show');
+		$('.Special_time, .event').addClass('show');
 	},500);
-	setTimeout(function(){
-		$('.Special_time').removeClass('show');
-		$('.Special_icon').fadeIn(300);
-	},7000)
+	// setTimeout(function(){
+	// 	$('.Special_time, .event').removeClass('show');
+	// 	$('.Special_icon').fadeIn(300);
+	// },7000)
 	$('.Special_close').bind('tapone click mouseup touchend', function(){
 		$('.Special_time').removeClass('show');
+		$('.Special_icon').fadeIn(300);
+		setTimeout(function(){$('.event').removeClass('show');},500);
 	});
 	$('.Special_icon').bind('tapone click mouseup touchend', function(){
-		$('.Special_time').addClass('show');
+		$('.Special_time, .event').addClass('show');
 	});
 };
 

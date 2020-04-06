@@ -370,7 +370,7 @@ a{ text-decoration: none; }
 	color:#fff;
 	text-shadow: 0px 1px 2px #be382d;
 	padding-left: 5%;
-	font-size: 3.5vw;
+	font-size: 2.5em;
 	line-height: 1em;
 	position: relative;
 	float: left;
@@ -513,16 +513,85 @@ a{ text-decoration: none; }
 }
 .menu_screen .menu_block .menu_title{
 	background: #db4f44;
-	padding-left: 30px;
+	/* padding-left: 30px; */
 	color: #fff;
 	text-shadow: 0px 2px #a8281e;
 	font-size: 16px;
-	padding: 5px 0 5px 30px;
+	padding: 5px 0 5px 0px;
 	border-bottom: 1px solid #a8281e80;
+	text-align: center;
 }
 
 .toggle_menu{
-	display: none;
+	display: flex !important;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.toggle_menu.show{
+	visibility: visible;
+	opacity: 1;
+	display: flex !important;
+}
+
+.toggle_menu .toggle_menu_wrapper{
+	display: flex;
+	width: calc(100% - 100px);
+	height: calc(100% - 100px);
+	margin:50px;
+	flex-direction: column;
+	background: #fff;
+	position: relative;
+	border-radius: 20px;
+}
+
+.toggle_menu .toggle_menu_wrapper .toggle_menu_cover{
+	width: calc(100% - 60px);
+	height: calc(100% - 60px);
+	overflow: hidden;
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+
+.toggle_menu .toggle_menu_wrapper .toggle_menu_cover .toggle_menu_scroller{
+	width:100%;
+}
+
+.toggle_menu .toggle_menu_wrapper .toggle_menu_close{
+	width:40px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #db4f44;
+	border-radius: 3em;
+	color: #db4f44;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	box-shadow: 0px 0px 3px 3px #ddd;
+	z-index: 100;
+}
+
+.toggle_menu .toggle_menu_wrapper .toggle_menu_close::before,
+.toggle_menu .toggle_menu_wrapper .toggle_menu_close::after{
+	width:50%; height: 1px;
+	background:#db4f44;
+	content:''; display: inline;
+	position: absolute; left:25%; top:50%;
+}
+
+.toggle_menu .toggle_menu_wrapper .toggle_menu_close::before{
+	-webkit-transform:rotate(-45deg);
+}
+.toggle_menu .toggle_menu_wrapper .toggle_menu_close::after{
+	-webkit-transform:rotate(45deg);
 }
 
 .menu_screen .menuItem{
@@ -774,7 +843,7 @@ font-size: 18px;
 	width: 93%;
 	height:87%;
 	margin:5% 2% 5% 0;
-	padding-right:20px;
+	padding-right: 10px;
 	float: right;
 	overflow: hidden;
 	position: relative;
@@ -803,8 +872,8 @@ font-size: 18px;
 
 #menu_item_list .right_block .menu_list_scroll table.right_list tr.child td:nth-child(1){ padding-left:3em;}
 #menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(1){ width:80%;}
-#menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(2){ width:10%;}
-#menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(3){ width:10%; text-align:center;}
+#menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(2){ width:12%;}
+#menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(3){ text-align:center;}
 #menu_item_list .right_block .menu_list_scroll table.right_list td.header{ padding-left:0px !important; font-size:1.2px; padding-top:30px;}
 #menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(1){ padding-left:10px;} 
 #menu_item_list .right_block .menu_list_scroll table.right_list td:nth-child(2){ text-align:center;} 
@@ -812,8 +881,8 @@ font-size: 18px;
 
 #menu_item_list .right_block .menu_list_scroll #scroller{
 	position: absolute;
-    z-index: 1;
-    width: 100%;
+	z-index: 1;
+	width: inherit;
 }
 #menu_item_list{display:none;position: relative;min-height: 750px;}
 
@@ -924,6 +993,8 @@ div.iScrollVerticalScrollbar div.iScrollIndicator{ opacity:1; background:#7eac00
 	font-size: 18px;
 	line-height: 22px;
 	text-shadow:0px 2px #a8281e;
+	display:flex;
+	flex-direction: column;
 }
 .menu_screen #Del_Pick_bar .Del_Pick_bar div.address_block:before{
 	/*background: #a8281e;*/
@@ -998,7 +1069,7 @@ div.iScrollVerticalScrollbar div.iScrollIndicator{ opacity:1; background:#7eac00
 	position: relative;
 }
 .order_screen .order_content .left_content .title_bar .pick_info .radio_button a{
-	font-size: 20px;
+	font-size: 18px;
 	color:#2e2e2e;
 	font-weight: 300;
 	line-height: inherit;
@@ -1019,7 +1090,7 @@ div.iScrollVerticalScrollbar div.iScrollIndicator{ opacity:1; background:#7eac00
 }
 
 .order_screen .order_content .left_content .title_bar .pick_info .pick_time{
-	font-size:1.6em; 
+	font-size: 18px;
 }
 
 .order_screen .order_content .left_content .title_bar .pick_info .pick_time select{
