@@ -46,8 +46,8 @@ $(document).ready(function(){
 	$('.menu_item').bind('tapone click mouseup touchend', function(){
 		$('.menu_list').fadeOut(300);
 		$('.menu_title').trigger('click');
-		if(mobile_browser == true)
-			clearInterval(loop_menu_);
+		// if(mobile_browser == true)
+		// 	clearInterval(loop_menu_);
 		show_food_content($(this).attr('rel'));
 		$('#menu_item_list').fadeIn(300, function(){
 			$('#menu_item_list .navi').addClass('ani');
