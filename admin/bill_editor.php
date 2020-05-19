@@ -9,6 +9,15 @@ require_once("includes/application_top.php");
 	$MONTH = $_POST['month'];
 	$soundfile = 'media/sound_1.mp3';
 	
+	function load_year(){
+		$value;
+		$list_years = tep_db_query('select * from bill group by YEAR(DATE)');
+		while($row = tep_db_fetch_array($list_years)){
+			$value .= $row['DATE'] . '__';
+		}
+		echo $value;
+	};
+
 	function load_bills($YEAR, $MONTH)
 	{
 		
@@ -19,7 +28,7 @@ require_once("includes/application_top.php");
 			$bill = tep_db_query("select * from bill where YEAR(DATE) = '" . $YEAR . "' and MONTH(DATE) = '".$MONTH."' ORDER BY STATUS, DATE DESC");
 		
 		
-		mysqli_query("SET character_set_results=utf8");
+		mysql_query("SET character_set_results=utf8");
 		if($bill != null)
 		{
 			while($row = tep_db_fetch_array($bill))
@@ -59,9 +68,15 @@ require_once("includes/application_top.php");
 			}
 		}
 		if( $new_bill == 1)
-			echo '<tr style="display=none;"><td colspan="6"><embed src ="media/sound_2.mp3" hidden="true" autostart="true"></embed></td></tr>';
+			echo '<tr style="display=none;"><td colspan="6"><audio src="media/sound_2.mp3" autoplay="true" loop="true"></audio></td></tr>';
 			//echo '<embed src ="$soundfile" hidden="true" autostart="true"></embed>';
+			
 		
+	}
+
+	if($_POST['action'] == 'load_year')
+	{		
+		load_year();
 	}
 	
 	if($_POST['action'] == 'load_bill')

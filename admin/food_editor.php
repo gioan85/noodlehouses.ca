@@ -9,8 +9,8 @@ require_once("includes/application_top.php");
 	
 	function load_products($MENU)
 	{
-		$food = tep_db_query("select * from foods where foods.MENU = '" . $MENU . "' order by foods.ID");
-		mysqli_query("SET character_set_results=utf8");
+		$food = tep_db_query("select * from foods where foods.MENU = '" . $MENU . "'");
+		mysql_query("SET character_set_results=utf8");
 		if($food != null)
 		{
 			while($row = tep_db_fetch_array($food))
@@ -73,7 +73,7 @@ require_once("includes/application_top.php");
 		$product = tep_db_query("select * from products where NAME like '$content%' or NAME like '%$content' or NAME like '%$content%' or DESCRIPTION like '$content%' or DESCRIPTION like '%$content' or DESCRIPTION like '%$content%';");
 		if(tep_db_num_rows($product) >0)
 		{
-			mysqli_query("SET character_set_results=utf8");
+			mysql_query("SET character_set_results=utf8");
 			echo '<table border="1" cellpadding="0" cellspacing="0" width="100%" class="grid">';
 			while($row = tep_db_fetch_array($product))
 			{

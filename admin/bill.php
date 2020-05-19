@@ -23,10 +23,10 @@ $sts->set_keywords('');
 <h1>Bills</h1>
 <h3>Time</h3>
 <select class="select" id="year" onchange="load_bill()">
-	<option>2014</option>
-    <option>2015</option>
-    <option>2016</option>
-    <option selected="selected">2017</option>
+	<option>2017</option>
+    <option>2018</option>
+    <option>2019</option>
+    <option selected="selected">2020</option>
 </select>
 <select class="select" id="month" onchange="load_bill()">
 	<option>1</option>
@@ -182,7 +182,30 @@ $sts->set_keywords('');
 		checkDOMChanges: true
 	});
 	
-	
+	function load_year(){
+		var string = 'action=load_year';
+		$.ajax({
+			url:'bill_editor.php',
+			type: 'POST',
+			data: string,
+			success: function(data){
+				if(data)
+					$('#year').find('option').remove();
+				var years = data.split('__');
+				years.forEach(function(e,i){
+					var year = new Date(e);
+					console.log(e);
+					if(year.getUTCFullYear()+'' != 'NaN'){
+						if( i == years.length - 2)
+							$('#year').append('<option selected="selected">'+year.getUTCFullYear()+'</option>');
+						else
+							$('#year').append('<option>'+year.getUTCFullYear()+'</option>');
+					}
+						
+				})
+			}
+		})
+	}
 	
 	function load_bill(){
 		var string ='action=load_bill';
@@ -197,21 +220,25 @@ $sts->set_keywords('');
 				//alert(data);
 				//console.log(data);
 				$('#list_bill').html(data);
-				setTimeout(function(){
-					$('.list_bill').find('.new_bill').each(function(){
-						$(this).find('.print_bill').trigger('click');
-					});
-				},1000);
+				// setTimeout(function(){
+				// 	$('.list_bill').find('.new_bill').each(function(){
+				// 		$(this).find('.print_bill').trigger('click');
+				// 	});
+				// },1000);
 				myscroll.refresh();
 			}
 		});
-		
 	};
+
+
+	load_year();
+	setTimeout(function(){
+		load_bill();
+	},100);
 	
-	load_bill();
 	setInterval( function(){
 		load_bill();
-	} ,60000);
+	} ,30000);
 	
 	function delete_bill(bill_ID){
 		var answer = confirm("Are you sure to delete this bill?");

@@ -1,4 +1,5 @@
 var food_scroller;
+var menu_toggle_scroller;
 
 var contact_name,
 	contact_phone,
@@ -22,7 +23,7 @@ $(document).ready(function(){
 	// });
 	
 	setTimeout(function(){
-		$('.top_bar, .top_bar ul, .social_icon, .top_logo, .address_bar, .Del_Pick_bar, .navi, .left_block, .right_block, .shopping_cart, .top_line, .bot_line, .left_line, .right_line').addClass('ani_speed');
+		$('.top_bar, .top_bar ul, .social_icon, .top_logo, .address_bar, .Del_Pick_bar, .left_block, .right_block, .shopping_cart, .top_line, .bot_line, .left_line, .right_line').addClass('ani_speed');
 	},200);
 
 	/*------------top menu------------*/
@@ -68,25 +69,25 @@ $(document).ready(function(){
 		if($('.menu_block').css('display') == 'block')
 			$('body').attr('style','overflow:hidden');
 		$('.toggle_'+menu_title.attr('rel')).toggleClass('show');
-		
-	});
-	setTimeout(function(){
-		$('.toggle_menu_cover').each(function(e,i){
-			if($(this).height() < $(this).find('.toggle_menu_scroller').height()){
-				new IScroll($(this)[0],{
+		setTimeout(function(){
+			var menu_toggle = $('.toggle_menu.show');
+			if(menu_toggle.find('.toggle_menu_cover').height() < menu_toggle.find('.toggle_menu_scroller').height()){
+				menu_toggle_scroller = new IScroll(menu_toggle.find('.toggle_menu_cover')[0],{
 					scrollbars: true,
 					mouseWheel: true,
 					interactiveScrollbars: true,
 					checkDOMChanges: true
 				});
 			}
-		})
-	},500);
+		},500);
+	});
+	
 	
 
 	$('.toggle_menu_close').bind('click', function(){
 		$('.'+$(this).data('toggle_menu')).toggleClass('show');
 		$('body').attr('style','');
+		menu_toggle_scroller.destroy();
 	})
 
 	/*-----------bar click-------------*/

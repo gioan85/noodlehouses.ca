@@ -10,7 +10,7 @@ require_once("includes/application_top.php");
 	function load_menu()
 	{
 		$menu = tep_db_query("select * from menu");
-		mysqli_query("SET character_set_results=utf8");
+		mysql_query("SET character_set_results=utf8");
 		if($menu != null)
 		{
 			while($row = tep_db_fetch_array($menu))

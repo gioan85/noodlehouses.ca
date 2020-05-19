@@ -128,64 +128,78 @@ $(document).ready(function(){
 
 
 	$('#order_submit').bind('click',function(){
+		
+		var order_status;
+		$.when(get_order_status()).done(function(){
+			setTimeout(function(){
+				order_status = $('body #order_status').text();
+			},50);
+			setTimeout(function(){
+				console.log('order status ' + order_status)
+				if(order_status.indexOf('0') != -1){
 
-		if(stop_order == true){
-
-			messagebox('Our business is temporarily out of order!<br>Sorry for this inconvenience');
-
-			return;	
-
-		}	
-
-		if(order_ == 'pickup')
-
-		{
-
-			pickup_time = check_pickup_time();
-
-			console.log(pickup_time);
-
-			if(!pickup_time)
-
-				return;
-
-			if(get_customer_info() != true)
-
-			{
-
-				messagebox(get_customer_info());
-
-				return;
-
-			}
-
-			if($('#bill_cost').html() == '0')
-
-			{
-
-				messagebox('Your cart have no food!<br>Please order first!');
-
-				$('.message_box a').bind('tapone click mouseup touchend',function(){
-
-					scrollTo_('.menu_screen','bottom',1000);
-
-					return;
-
-				});
-
-			}
-
-			else
-
-			{
-
-				submit_bill(pickup_time);
-
-				return;
-
-			}	
-
-		}	
+					messagebox('Our business is temporarily out of order!<br>Sorry for this inconvenience');
+		
+					return;	
+		
+				}
+				else{
+					if(order_ == 'pickup')
+		
+					{
+			
+						pickup_time = check_pickup_time();
+			
+						console.log(pickup_time);
+			
+						if(!pickup_time)
+			
+							return;
+			
+						if(get_customer_info() != true)
+			
+						{
+			
+							messagebox(get_customer_info());
+			
+							return;
+			
+						}
+			
+						if($('#bill_cost').html() == '0')
+			
+						{
+			
+							messagebox('Your cart have no food!<br>Please order first!');
+			
+							$('.message_box a').bind('tapone click mouseup touchend',function(){
+			
+								scrollTo_('.menu_screen','bottom',1000);
+			
+								return;
+			
+							});
+			
+						}
+			
+						else
+			
+						{
+			
+							submit_bill(pickup_time);
+			
+							return;
+			
+						}	
+			
+					}
+				}
+		
+				
+				
+			},500);
+		})
+			
 
 	});
 
@@ -207,7 +221,7 @@ $(document).ready(function(){
 
 	});
 
-	
+	get_order_status();
 });
 
 
@@ -262,62 +276,46 @@ window.clickable = 1;
 
 function add_to_bill(id,name,price){
 
-	if(stop_order == true){
+	var order_status;
+	$.when(get_order_status()).done(function(){
+		setTimeout(function(){
+			order_status = $('body #order_status').text();
+		},50);
+		setTimeout(function(){
+			console.log('order status ' + order_status)
+			if(order_status.indexOf('0') != -1){
+				messagebox('Our business is temporarily out of order!<br>Sorry for this inconvenience');
 
-		messagebox('Our business is temporarily out of order!<br>Sorry for this inconvenience');
+				return;
+			}
+			else{
+				if( window.clickable == 0)
+					return;
 
-		return;	
+				window.clickable = 0;
 
-	}	
+				setTimeout(function(){
+					window.clickable = 1;		
 
-	if( window.clickable == 0)
+				},300);
 
-		return;
+				for( var i = 0; i< bill_food_list.length; i++)
+				{
+					if( bill_food_list[i][0] == id)
+					{
+						bill_food_list[i][3] = parseInt(bill_food_list[i][3]) + 1;
+						show_bill_value();
+						receipt_scroller.refresh();
+						return;
+					}	
+				}
 
-	window.clickable = 0;
-
-	setTimeout(function(){
-
-		window.clickable = 1;		
-
-	},300);
-
-	
-
-	for( var i = 0; i< bill_food_list.length; i++)
-
-	{
-
-		if( bill_food_list[i][0] == id)
-
-		{
-
-			bill_food_list[i][3] = parseInt(bill_food_list[i][3]) + 1;
-
-			show_bill_value();
-
-			receipt_scroller.refresh();
-
-			return;
-
-		}	
-
-	}
-
-	
-
-	bill_food_list.push([id,name,price,'1']);
-
-	
-
-	show_bill_value();
-
-	
-
-	receipt_scroller.refresh();
-
-	
-
+				bill_food_list.push([id,name,price,'1']);
+				show_bill_value();
+				receipt_scroller.refresh();
+			}
+		},100);
+	});
 };
 
 
@@ -714,4 +712,20 @@ function inital(){
 
 	order_note.val('Note...');
 
+};
+
+// get order status
+
+function get_order_status(callback){
+	var string = 'action=load_status';
+	$('body').find('#order_status').remove();
+	$.ajax({
+		url: "order_editor.php",
+		type: "POST",
+		data: string,
+		success: function(data){
+			$('body').append('<div id="order_status">'+data+'</div>');
+		}
+	});
+	
 };

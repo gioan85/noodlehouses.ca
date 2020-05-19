@@ -93,6 +93,8 @@ if(!isset($_COOKIE['username']))
 						echo '<li><a href="im_ex_port.php">Export / Import Database</a></li>';
 						echo '<li><a href="home_slide_show.php">Home slide show</a></li>';
 						echo '<li><a href="account.php">Account</a></li>';
+						echo '<li><a href="notice.php">Notification</a></li>';
+						echo '<li><a href="order.php">Order status</a></li>';
 						echo '</ul>';
 					}
 					if((string)$user == 'waiter')

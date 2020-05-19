@@ -39,7 +39,7 @@ require_once("includes/application_top.php");
 	
 	function load_user(){
 		$user = tep_db_query("select * from account");
-		mysqli_query("SET character_set_results=utf8");
+		mysql_query("SET character_set_results=utf8");
 		echo '<table>';
 		echo '<tr><td>User</td><td>Position</td><td><div class="btn_submit" onclick="add_new();">Add new</div></td></tr>';
 		if($user != null)
